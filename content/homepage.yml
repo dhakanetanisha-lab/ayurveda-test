@@ -1,0 +1,92 @@
+
+top_bar:
+
+  phone: "+91 9665023187"
+
+  email: "palwegajan77@gmail.com"
+
+  social:
+
+    facebook: true
+
+    instagram: false
+
+    twitter: false
+
+ 
+
+essence:
+
+  heading: |
+
+    Experience the true essence of wellness with Vishwaprakriti Ayurveda.
+
+  subtext: "Rooted in timeless wisdom, nurtured by nature."
+
+ 
+
+about:
+
+  image: "icons/ayurveda.jpg"
+
+  title: "Ever wondered what Ayurveda really is? Unlock its holistic magic!"
+
+  description: 
+
+    Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a "Science of Life" blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge).
+
+  button:
+
+    text: "Curious? Read More"
+
+    link: "/ayurveda.html"
+
+ 
+doctors:
+  title: "Meet Our Ayurveda Experts"
+  subtitle: "Seasoned practitioners blending ancient wisdom with modern care"
+  items:
+    - name: "Dr. Gajanan Patil"
+      specialization: "Ayurveda & Panchakarma"
+      image: "/icons/doctor1.jpg"
+      bio: "Specialized in traditional Ayurveda treatments and holistic wellness programs."
+    - name: "Dr. Sangeeta Kulkarni"
+      specialization: "Herbal Medicine"
+      image: "/icons/doctor2.jpg"
+      bio: "Expert in herbal therapies and personalized Ayurveda plans."
+    - name: "Dr. Rohit Deshmukh"
+      specialization: "Yoga & Lifestyle"
+      image: "/icons/doctor3.jpg"
+      bio: "Focuses on integrating Ayurveda with Yoga for complete well-being."
+
+
+testimonials:
+
+  title: "Testimonials"
+
+  items:
+
+    - quote: "Life-changing experience with authentic Ayurveda treatments."
+
+      author: "Patient"
+
+ 
+
+    - quote: "Highly professional doctors and natural healing approach."
+
+      author: "Patient"
+
+ 
+
+    - quote: "Best Ayurveda center I have visited."
+
+      author: "Patient"
+
+ 
+
+  button:
+
+    text: "Get More Reviews"
+
+    link: "#"
+

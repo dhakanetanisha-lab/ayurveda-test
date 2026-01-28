@@ -1,0 +1,139 @@
+<header class="site-header">
+  <h1>{{data.site.title}}</h1>
+</header>
+
+<!-- TOP CAROUSEL -->
+<section class="hero-carousel">
+  <button class="carousel-btn prev">&#10094;</button>
+
+  <div class="carousel-track">
+    {{#each data.carousel}}
+      <div class="carousel-slide">
+        <img src="{{this.image}}" class="carousel-image" />
+
+        <div class="carousel-overlay">
+          <h2>{{this.title}}</h2>
+          <p>{{this.subtitle}}</p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  <button class="carousel-btn next">&#10095;</button>
+</section>
+
+
+
+{{#each data.products}}
+<section class="product-hero">
+  <div class="product-image">
+    <img src="{{this.image}}" alt="{{this.title}}">
+  </div>
+
+  <div class="product-details">
+    <h2>{{this.title}}</h2>
+
+    <p class="description">
+      {{this.description}}
+    </p>
+
+    <ul class="features">
+      {{#each this.features}}
+        <li>— {{this}}</li>
+      {{/each}}
+    </ul>
+
+
+
+    <button class="btn-primary" onclick="openOrderModal()">{{this.button_text}}</button>
+  </div>
+</section>
+{{/each}}
+
+	<div id="orderModal" class="modal">
+	  <div class="modal-content">
+		<span class="close" onclick="closeOrderModal()">&times;</span>
+
+		<h2>Place Order</h2>
+		<p id="selectedProduct"></p>
+
+		<input id="custName" placeholder="Your Name">
+		<input id="custPhone" placeholder="Phone Number">
+		<textarea id="custAddress" placeholder="Delivery Address"></textarea>
+
+		<button onclick="placeOrder()">Send via WhatsApp</button>
+	  </div>
+	</div>
+
+
+
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = document.querySelectorAll('.carousel-slide');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+
+  let index = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
+
+let currentProduct = '';
+
+function openOrderModal() {
+  currentProduct = 'Testing Product Ayurveda';
+  document.getElementById('selectedProduct').innerText =
+    'Product: ' + 'Testing Product Ayurveda';
+
+  document.getElementById('orderModal').style.display = 'block';
+}
+
+function closeOrderModal() {
+  document.getElementById('orderModal').style.display = 'none';
+}
+
+function placeOrder() {
+  const name = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim();
+  const address = document.getElementById('custAddress').value.trim();
+
+  if (!name || !phone) {
+    alert('Please enter name and phone');
+    return;
+  }
+
+  const adminPhone = '918459855891'; // ADMIN NUMBER
+
+  const message = `
+🛒 *New Order*
+
+📦 Product: ${currentProduct}
+👤 Name: ${name}
+📞 Phone: ${phone}
+📍 Address: ${address}
+`;
+
+  const url =
+    'https://wa.me/' +
+    adminPhone +
+    '?text=' +
+    encodeURIComponent(message);
+
+  window.open(url, '_blank');
+  closeOrderModal();
+}
+
+
+</script>

@@ -1,0 +1,44 @@
+/* ===============================
+   Ayurveda Page Styles
+   =============================== */
+
+/* HERO */
+.ayurveda-hero {
+  max-height: 420px;
+  overflow: hidden;
+}
+
+.ayurveda-hero img {
+  object-fit: cover;
+}
+
+/* SECTION IMAGES */
+.ayurveda-img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 16px;
+}
+
+/* DOSHA CARDS */
+.dosha-card img {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.dosha-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dosha-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* TEXT REFINEMENT */
+.ayurveda-section p {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}

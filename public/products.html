@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Vishwaprakriti Ayurveda</title>
+
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/home.css">
+<link rel="icon" href="/favicon.ico">
+</head>
+<body>
+
+<nav class="site-nav">
+  <ul>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/products.html">Products</a></li>
+  </ul>
+</nav>
+
+<header class="site-header">
+  <h1>Vishwaprakriti Ayurveda</h1>
+</header>
+
+<!-- TOP CAROUSEL -->
+<section class="hero-carousel">
+  <button class="carousel-btn prev">&#10094;</button>
+
+  <div class="carousel-track">
+      <div class="carousel-slide">
+        <img src="icons/pslide1.jpg" class="carousel-image" />
+
+        <div class="carousel-overlay">
+          <h2>Rediscover Ancient Healing</h2>
+          <p>Nature’s wisdom blended in every drop.</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="icons/pslide2.jpg" class="carousel-image" />
+
+        <div class="carousel-overlay">
+          <h2>Rooted in Nature</h2>
+          <p>Healing begins when nature meets your routine.</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="icons/pslide3.jpg" class="carousel-image" />
+
+        <div class="carousel-overlay">
+          <h2>Wellness, The Natural Way</h2>
+          <p>Experience modern living with age-old Ayurvedic balance.</p>
+        </div>
+      </div>
+  </div>
+
+  <button class="carousel-btn next">&#10095;</button>
+</section>
+
+
+
+<section class="product-hero">
+  <div class="product-image">
+    <img src="/icons/product1.jpg" alt="Nityam Suvarnaprashan1">
+  </div>
+
+  <div class="product-details">
+    <h2>Nityam Suvarnaprashan1</h2>
+
+    <p class="description">
+      Immunity booster for kids
+    </p>
+
+    <ul class="features">
+        <li>— Boosts immunity</li>
+        <li>— Improves memory</li>
+    </ul>
+
+
+
+    <button class="btn-primary" onclick="openOrderModal()">Order Now</button>
+  </div>
+</section>
+<section class="product-hero">
+  <div class="product-image">
+    <img src="/icons/product2.jpg" alt="Nityam Suvarnaprashan2">
+  </div>
+
+  <div class="product-details">
+    <h2>Nityam Suvarnaprashan2</h2>
+
+    <p class="description">
+      Immunity booster for kids
+    </p>
+
+    <ul class="features">
+        <li>— Boosts immunity</li>
+        <li>— Improves memory</li>
+    </ul>
+
+
+
+    <button class="btn-primary" onclick="openOrderModal()">Order Now</button>
+  </div>
+</section>
+<section class="product-hero">
+  <div class="product-image">
+    <img src="/icons/product3.jpg" alt="Nityam Suvarnaprashan3">
+  </div>
+
+  <div class="product-details">
+    <h2>Nityam Suvarnaprashan3</h2>
+
+    <p class="description">
+      Immunity booster for kids
+    </p>
+
+    <ul class="features">
+        <li>— Boosts immunity</li>
+        <li>— Improves memory</li>
+    </ul>
+
+
+
+    <button class="btn-primary" onclick="openOrderModal()">Order Now</button>
+  </div>
+</section>
+<section class="product-hero">
+  <div class="product-image">
+    <img src="/icons/product4.jpg" alt="Gajanan Nityam Suvarnaprashan4">
+  </div>
+
+  <div class="product-details">
+    <h2>Gajanan Nityam Suvarnaprashan4</h2>
+
+    <p class="description">
+      Aasdl;saaaaaaaaaaaa
+    </p>
+
+    <ul class="features">
+        <li>— Boosts immunity</li>
+        <li>— Improves memory</li>
+    </ul>
+
+
+
+    <button class="btn-primary" onclick="openOrderModal()">Order Now</button>
+  </div>
+</section>
+
+	<div id="orderModal" class="modal">
+	  <div class="modal-content">
+		<span class="close" onclick="closeOrderModal()">&times;</span>
+
+		<h2>Place Order</h2>
+		<p id="selectedProduct"></p>
+
+		<input id="custName" placeholder="Your Name">
+		<input id="custPhone" placeholder="Phone Number">
+		<textarea id="custAddress" placeholder="Delivery Address"></textarea>
+
+		<button onclick="placeOrder()">Send via WhatsApp</button>
+	  </div>
+	</div>
+
+
+
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const slides = document.querySelectorAll('.carousel-slide');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+
+  let index = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    index = (index + 1) % slides.length;
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
+
+let currentProduct = '';
+
+function openOrderModal() {
+  currentProduct = 'Testing Product Ayurveda';
+  document.getElementById('selectedProduct').innerText =
+    'Product: ' + 'Testing Product Ayurveda';
+
+  document.getElementById('orderModal').style.display = 'block';
+}
+
+function closeOrderModal() {
+  document.getElementById('orderModal').style.display = 'none';
+}
+
+function placeOrder() {
+  const name = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim();
+  const address = document.getElementById('custAddress').value.trim();
+
+  if (!name || !phone) {
+    alert('Please enter name and phone');
+    return;
+  }
+
+  const adminPhone = '918459855891'; // ADMIN NUMBER
+
+  const message = `
+🛒 *New Order*
+
+📦 Product: ${currentProduct}
+👤 Name: ${name}
+📞 Phone: ${phone}
+📍 Address: ${address}
+`;
+
+  const url =
+    'https://wa.me/' +
+    adminPhone +
+    '?text=' +
+    encodeURIComponent(message);
+
+  window.open(url, '_blank');
+  closeOrderModal();
+}
+
+
+</script>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li>Home</li>
+
+        <li>About</li>
+
+        <li>Treatments</li>
+
+        <li>Contact</li>
+
+      </ul>
+
+    </div>
+
+ 
+
+    <div>
+
+      <h3>Contact</h3>
+
+      <p>📞 +91 98765 43210</p>
+
+      <p>✉️ info@vishwaprakritiayurveda.com</p>
+
+    </div>
+
+  </div>
+
+ 
+
+  <p class="copy">© 2026 Vishwaprakriti Ayurveda</p>
+
+</footer>
+
+<script src="css/slider.js"></script>
+
+</body>
+</html>

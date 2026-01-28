@@ -1,0 +1,52 @@
+data:
+  site:
+    title: "Vishwaprakriti Ayurveda"
+
+  carousel:
+    - title: "Rediscover Ancient Healing"
+      subtitle: "Nature’s wisdom blended in every drop."
+      image: "icons/pslide1.jpg"
+
+    - title: "Rooted in Nature"
+      subtitle: "Healing begins when nature meets your routine."
+      image: "icons/pslide2.jpg"
+
+    - title: "Wellness, The Natural Way"
+      subtitle: "Experience modern living with age-old Ayurvedic balance."
+      image: "icons/pslide3.jpg"
+
+  products:
+    - title: "Nityam Suvarnaprashan1"
+      description: "Immunity booster for kids"
+      features:
+        - "Boosts immunity"
+        - "Improves memory"
+      button_text: "Order Now"
+      image: "/icons/product1.jpg"
+
+    - title: "Nityam Suvarnaprashan2"
+      description: "Immunity booster for kids"
+      features:
+        - "Boosts immunity"
+        - "Improves memory"
+      button_text: "Order Now"
+      image: "/icons/product2.jpg"
+
+    - title: "Nityam Suvarnaprashan3"
+      description: "Immunity booster for kids"
+      features:
+        - "Boosts immunity"
+        - "Improves memory"
+      button_text: "Order Now"
+      image: "/icons/product3.jpg"
+
+    - title: "Gajanan Nityam Suvarnaprashan4"
+      description: "Aasdl;saaaaaaaaaaaa"
+      features:
+        - "Boosts immunity"
+        - "Improves memory"
+      button_text: "Order Now"
+      image: "/icons/product4.jpg"
+
+  footer:
+    text: "© 2026 Vishwaprakriti Ayurveda"

@@ -1,0 +1,24 @@
+hero:
+  title: "Experience the Essence of Wellness Test by Tanu"
+  subtitle: "Embrace holistic health with Vishwaprakriti Ayurveda"
+  button_text: "Book Appointment"
+  button_link: "#"
+
+Treatment:
+  title: "What is Ayurveda?"
+  text: "Ayurveda is a holistic Indian system of medicine that uses a constitutional model. It works to provide a flexible guidance to attain a state of positive health. Its treatment and techniques is also flexible for people with health challenges.
+
+Ayurveda is derived from two Sanskrit root words: Ayu, which means Life, and Veda, which means the Knowledge. Thus it would be safe to call Ayurveda as the ‘Science of life’ more than a mere system of treating an illness."
+
+
+doctor:
+   name: "Tanish Dhakane"
+   Experience: "Dr. XYZ, M.D. (Ayu), PhD (Scholar), is an Ayurvedic practitioner at Shree Vishwaprakriti Ayurveda Superspeciality Clinic and Panchakarma Centre, Nagpur. He is an expert in Nadipariksha and specializes in the treatment of chronic disorders, including Joint and Spine Disorders, Respiratory Disorders, Neurological Disorders, Migraine, Gastroenterological Diseases, Anorectal Diseases, and Lifestyle Disorders such as Diabetes, Hypertension, Heart Diseases, Obesity, Kidney Disorders, Hyperlipidemia, Thyroid Disorders, Autoimmune Diseases, and Rheumatoid Arthritis.
+
+With a comprehensive understanding of Ayurvedic principles, he focuses on holistic approaches to wellness and well-being, addressing the underlying causes of ailments along with the symptoms. Furthermore, his expertise includes a multi-dimensional approach that enhances physical, mental, and emotional aspects to achieve optimal health and balance for his patients. Dr. Vishal’s approach prioritizes wellness and well-being, integrating Ayurvedic principles to promote mental and emotional harmony alongside physical health for his patients.
+
+Dr. XYZ has participated in several national and international seminars, presented papers, and chaired sessions. He has made a notable impact on Kerala Ayurvedic treatments with his effective treatments and esteemed presence at various Ayurveda conferences"
+  
+
+footer:
+  text: "© 2026 Vishwaprakriti Ayurveda"
