@@ -170,9 +170,18 @@ app.post('/admin/upload-gallery', galleryUpload.single('image'), (req, res) => {
 /* =========================
    START SERVER
 ========================= */
-const PORT = process.env.PORT || 3000;
+/*const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
   console.log(`🌿 Site:  http://localhost:${PORT}/index.html`);
   console.log(`🛠 Admin: http://localhost:${PORT}/admin/editor.html`);
+});*/
+
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`🌿 Site running on port ${PORT}`);
 });
+
+
