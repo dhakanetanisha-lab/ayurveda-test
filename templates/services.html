@@ -1,0 +1,72 @@
+<header class="site-header">
+  <h1>{{data.site.title}}</h1>
+</header>
+
+<!-- TOP CAROUSEL -->
+<section class="hero-carousel">
+  <button class="carousel-btn prev">&#10094;</button>
+
+  <div class="carousel-track">
+    {{#each data.carousel}}
+      <div class="carousel-slide">
+        <img src="{{this.image}}" class="carousel-image" />
+
+        <div class="carousel-overlay">
+          <h2>{{this.title}}</h2>
+          <p>{{this.subtitle}}</p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  <button class="carousel-btn next">&#10095;</button>
+</section>
+
+
+
+{{#each data.servicess}}
+<section class="services-hero">
+  <div class="services-image">
+    <img src="{{this.image}}" alt="{{this.title}}">
+  </div>
+
+  <div class="services-details">
+    <h2>{{this.title}}</h2>
+
+    <p class="description">
+      {{this.description}}
+    </p>
+
+
+
+
+   <button
+  class="btn-primary order-btn"
+  data-services="{{this.title}}"
+>
+  {{this.button_text}}
+</button>
+
+  </div>
+</section>
+{{/each}}
+
+	<div id="orderModal" class="modal">
+	  <div class="modal-content">
+		<span class="close" onclick="closeOrderModal()">&times;</span>
+
+		<h2>Enquire</h2>
+		<p id="selectedservices"></p>
+
+		<input id="custName" placeholder="Your Name">
+		<input id="custPhone" placeholder="Phone Number">
+		<textarea id="custAddress" placeholder="Delivery Address"></textarea>
+
+		<button onclick="placeOrder()">Send via WhatsApp</button>
+	  </div>
+	</div>
+
+<script src="css/services.js"></script>
+
+
+

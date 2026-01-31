@@ -1,8 +1,10 @@
 const fs = require('fs');
+const path = require('path');
 const yaml = require('js-yaml');
 const Handlebars = require('handlebars');
 
-// -------- HELPERS --------
+/* ---------- HELPERS ---------- */
+
 function loadYAML(file) {
   return yaml.load(fs.readFileSync(file, 'utf8'));
 }
@@ -29,10 +31,12 @@ function buildPage(content, template, output, title) {
   fs.writeFileSync(output, finalHTML, 'utf8');
 }
 
-// -------- REVIEWS --------
+/* ---------- REVIEWS ---------- */
+
 const reviews = loadReviews();
 
-// -------- HOMEPAGE --------
+/* ---------- HOMEPAGE ---------- */
+
 const homepage = loadYAML('./content/homepage.yml');
 
 homepage.testimonials ||= {};
@@ -48,7 +52,8 @@ buildPage(
   'Vishwaprakriti Ayurveda'
 );
 
-// -------- PRODUCTS --------
+/* ---------- PRODUCTS ---------- */
+
 const products = loadYAML('./content/products.yml');
 
 buildPage(
@@ -58,15 +63,30 @@ buildPage(
   'Products | Vishwaprakriti Ayurveda'
 );
 
+/* ---------- PRODUCTS ---------- */
 
-/* GALLERY */
-// -------- PRODUCTS --------
-const gallery = loadYAML('./content/gallery.yml');
+const services = loadYAML('./content/services.yml');
 
 buildPage(
-  'gallery',
+  services,
+  './templates/services.html',
+  './public/services.html',
+  'services | Vishwaprakriti Ayurveda'
+);
+
+/* ---------- GALLERY (FIXED) ---------- */
+// -------- GALLERY --------
+const gallery = loadYAML('./content/gallery.yml');
+
+// normalize images if empty
+gallery.images ||= [];
+
+buildPage(
+  gallery,
   './templates/gallery.html',
   './public/gallery.html',
   'Gallery | Vishwaprakriti Ayurveda'
 );
+
+
 console.log('✔ Build complete');

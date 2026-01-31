@@ -21,16 +21,16 @@
   });
 
 
-let currentProduct = '';
+let currentservices = '';
 
 document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.order-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      currentProduct = btn.dataset.product;
+      currentservices = btn.dataset.services;
 
-      document.getElementById('selectedProduct').innerText =
-        'Product: ' + currentProduct;
+      document.getElementById('selectedservices').innerText =
+        'services: ' + currentservices;
 
       document.getElementById('orderModal').style.display = 'block';
     });
@@ -57,7 +57,7 @@ function placeOrder() {
   const message = `
 🛒 *New Order*
 
-📦 Product: ${currentProduct}
+📦 services: ${currentservices}
 👤 Name: ${name}
 📞 Phone: ${phone}
 📍 Address: ${address}

@@ -3,9 +3,34 @@
 
   <div class="gallery-grid">
     {{#each images}}
-      <div class="gallery-item">
-        <img src="{{this}}" alt="Gallery image">
-      </div>
+      <figure class="gallery-card">
+        <img src="{{this.src}}" alt="{{this.caption}}">
+        {{#if this.caption}}
+          <figcaption>{{this.caption}}</figcaption>
+        {{/if}}
+      </figure>
     {{/each}}
   </div>
 </section>
+
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img">
+  <p id="lightbox-caption"></p>
+</div>
+
+
+<script>
+function openLightbox(src, caption) {
+  const box = document.getElementById('lightbox');
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox-caption').innerText = caption || '';
+  box.style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>

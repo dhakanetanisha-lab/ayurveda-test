@@ -1,0 +1,75 @@
+/* ========================= */
+/* GLOBAL HEADER */
+/* ========================= */
+
+.top-header {
+  border-bottom: 1px solid #eee;
+}
+
+/* Top contact bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 13px;
+  color: #422b23;
+  background: #faf7f5;
+}
+
+.contact-info {
+  white-space: nowrap;
+}
+
+/* Social icons */
+.social-icons a {
+  margin-left: 14px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #422b23;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.social-icons a:hover {
+  opacity: 1;
+}
+
+/* Main header */
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+/* Book appointment button */
+.book-btn {
+  background: #422b23;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 22px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(66, 43, 35, 0.3);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .header-main {
+    flex-direction: column;
+    gap: 14px;
+  }
+}

@@ -1,2 +1,16 @@
 title: Our Healing Gallery
-images: []
+images:
+  - src: /gallery/panchakarma.jpg
+    caption: Panchakarma therapy session
+  - src: /gallery/herbal-prep.jpg
+    caption: Ayurvedic medicine preparation
+  - src: /gallery/clinic.jpg
+    caption: Ayurvedic medicine preparation
+  - src: /gallery/herbal-prep.jpg
+    caption: Ayurvedic medicine preparation
+  - src: /gallery/herbal-prep.jpg
+    caption: Ayurvedic medicine preparation
+  - src: /gallery/herbal-prep.jpg
+    caption: Ayurvedic medicine preparation
+  - src: /gallery/herbal-prep.jpg
+    caption: Ayurvedic medicine preparation

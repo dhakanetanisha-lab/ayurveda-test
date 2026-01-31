@@ -119,7 +119,7 @@ const storage = multer.diskStorage({
     cb(null, path.join(__dirname, 'public/icons'));
   },
   filename: (req, file, cb) => {
-    cb(null, Date.now() + '-' + file.originalname);
+    cb(null, file.originalname);
   }
 });
 
@@ -175,8 +175,8 @@ app.post('/admin/upload-gallery', galleryUpload.single('image'), (req, res) => {
 app.listen(PORT, () => {
   console.log(`🌿 Site:  http://localhost:${PORT}/index.html`);
   console.log(`🛠 Admin: http://localhost:${PORT}/admin/editor.html`);
-});*/
-
+});
+*/
 
 const PORT = process.env.PORT || 3000;
 

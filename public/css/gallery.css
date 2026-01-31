@@ -1,30 +1,107 @@
+/* ========================= */
+/* GALLERY SECTION */
+/* ========================= */
+
 .gallery-section {
-  max-width: 1200px;
-  margin: 50px auto;
+  max-width: 1280px;
+  margin: 60px auto;
   padding: 0 20px;
 }
 
 .gallery-title {
+  font-size: 28px;
   color: #422b23;
-  font-size: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  text-align: left;
 }
 
+/* Grid layout */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 28px;
 }
 
-.gallery-item {
-  border-radius: 14px;
+/* Card */
+.gallery-card {
+  background: #fff;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(66,43,35,0.15);
+  box-shadow: 0 14px 30px rgba(66, 43, 35, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery-item img {
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(66, 43, 35, 0.18);
+}
+
+/* Image */
+.gallery-card img {
   width: 100%;
-  height: 220px;
+  height: 240px;
   object-fit: cover;
   display: block;
+}
+
+/* Caption */
+.gallery-card figcaption {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #422b23;
+  background: #faf7f5;
+  border-top: 1px solid #eee;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .gallery-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .gallery-card img {
+    height: 200px;
+  }
+}
+
+
+/* ========================= */
+/* LIGHTBOX */
+/* ========================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 75vh;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.lightbox p {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #eee;
+  max-width: 800px;
+  text-align: center;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 26px;
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
 }
