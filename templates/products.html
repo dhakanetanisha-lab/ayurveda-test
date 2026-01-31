@@ -45,7 +45,13 @@
 
 
 
-    <button class="btn-primary" onclick="openOrderModal()">{{this.button_text}}</button>
+   <button
+  class="btn-primary order-btn"
+  data-product="{{this.title}}"
+>
+  {{this.button_text}}
+</button>
+
   </div>
 </section>
 {{/each}}
@@ -65,75 +71,7 @@
 	  </div>
 	</div>
 
+<script src="css/product.js"></script>
 
 
 
-<script>
-  const track = document.querySelector('.carousel-track');
-  const slides = document.querySelectorAll('.carousel-slide');
-  const prevBtn = document.querySelector('.carousel-btn.prev');
-  const nextBtn = document.querySelector('.carousel-btn.next');
-
-  let index = 0;
-
-  function updateCarousel() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  nextBtn.addEventListener('click', () => {
-    index = (index + 1) % slides.length;
-    updateCarousel();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    index = (index - 1 + slides.length) % slides.length;
-    updateCarousel();
-  });
-
-let currentProduct = '';
-
-function openOrderModal() {
-  currentProduct = 'Testing Product Ayurveda';
-  document.getElementById('selectedProduct').innerText =
-    'Product: ' + 'Testing Product Ayurveda';
-
-  document.getElementById('orderModal').style.display = 'block';
-}
-
-function closeOrderModal() {
-  document.getElementById('orderModal').style.display = 'none';
-}
-
-function placeOrder() {
-  const name = document.getElementById('custName').value.trim();
-  const phone = document.getElementById('custPhone').value.trim();
-  const address = document.getElementById('custAddress').value.trim();
-
-  if (!name || !phone) {
-    alert('Please enter name and phone');
-    return;
-  }
-
-  const adminPhone = '918459855891'; // ADMIN NUMBER
-
-  const message = `
-🛒 *New Order*
-
-📦 Product: ${currentProduct}
-👤 Name: ${name}
-📞 Phone: ${phone}
-📍 Address: ${address}
-`;
-
-  const url =
-    'https://wa.me/' +
-    adminPhone +
-    '?text=' +
-    encodeURIComponent(message);
-
-  window.open(url, '_blank');
-  closeOrderModal();
-}
-
-
-</script>

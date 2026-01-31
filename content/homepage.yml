@@ -21,7 +21,8 @@ essence:
 
     Experience the true essence of wellness with Vishwaprakriti Ayurveda.
 
-  subtext: "Rooted in timeless wisdom, nurtured by nature."
+  subtext: "Test Rooted in timeless wisdom, nurtured by nature. Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a Science of Life blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge)." 
+
 
  
 
@@ -33,7 +34,7 @@ about:
 
   description: 
 
-    Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a "Science of Life" blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge).
+    Testing Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a "Science of Life" blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge).
 
   button:
 
@@ -41,7 +42,7 @@ about:
 
     link: "/ayurveda.html"
 
- 
+
 doctors:
   title: "Meet Our Ayurveda Experts"
   subtitle: "Seasoned practitioners blending ancient wisdom with modern care"
@@ -61,32 +62,9 @@ doctors:
 
 
 testimonials:
-
   title: "Testimonials"
+  auto_slide_ms: 4000
+  items: []
 
-  items:
 
-    - quote: "Life-changing experience with authentic Ayurveda treatments."
-
-      author: "Patient"
-
- 
-
-    - quote: "Highly professional doctors and natural healing approach."
-
-      author: "Patient"
-
- 
-
-    - quote: "Best Ayurveda center I have visited."
-
-      author: "Patient"
-
- 
-
-  button:
-
-    text: "Get More Reviews"
-
-    link: "#"
 

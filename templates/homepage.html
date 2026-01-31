@@ -1,170 +1,122 @@
 <!-- TOP BAR -->
-<div class="top-bar sticky top-0 bg-white/90 backdrop-blur-md flex justify-between items-center px-6 py-2 shadow-sm z-50">
-  <div class="flex gap-6 text-gray-700 font-medium text-sm">
+<div class="top-bar">
+  <div>
     <span>📞 {{top_bar.phone}}</span>
     <span>✉️ {{top_bar.email}}</span>
   </div>
-
-  <div class="social flex gap-4 text-gray-600">
-    {{#if top_bar.social.facebook}}
-      <i class="fab fa-facebook-f hover:text-blue-600 transition-colors cursor-pointer"></i>
-    {{/if}}
-    {{#if top_bar.social.instagram}}
-      <i class="fab fa-instagram hover:text-pink-500 transition-colors cursor-pointer"></i>
-    {{/if}}
-    {{#if top_bar.social.twitter}}
-      <i class="fab fa-twitter hover:text-blue-400 transition-colors cursor-pointer"></i>
-    {{/if}}
+  <div class="social">
+    {{#if top_bar.social.facebook}}<i class="fab fa-facebook-f"></i>{{/if}}
+    {{#if top_bar.social.instagram}}<i class="fab fa-instagram"></i>{{/if}}
+    {{#if top_bar.social.twitter}}<i class="fab fa-twitter"></i>{{/if}}
   </div>
 </div>
 
 <!-- ESSENCE -->
-<section class="essence py-20 bg-gradient-to-b from-green-50 to-white text-center">
-  <h1 class="text-4xl md:text-5xl font-bold animate-fade-in">{{essence.heading}}</h1>
-  <p class="mt-4 text-lg md:text-xl text-gray-700 animate-fade-in-delay">{{essence.subtext}}</p>
+<section class="essence">
+  <h1>{{essence.heading}}</h1>
+  <p>{{essence.subtext}}</p>
 </section>
 
 <!-- SLIDER -->
-
 <section class="slider">
-
   <div class="slides">
-
     <div class="slide active">
-      <img src="/icons/page1.jpg" alt="Slide 1">
+      <img src="/icons/page1.jpg">
       <div class="overlay">
         <h2>Authentic Ayurveda</h2>
         <p>Healing rooted in ancient wisdom</p>
       </div>
     </div>
-
     <div class="slide">
-      <img src="/icons/page2.jpg" alt="Slide 2">
+      <img src="/icons/page2.jpg">
       <div class="overlay">
         <h2>Natural Therapies</h2>
         <p>Pure, personalized treatments</p>
       </div>
     </div>
-
-    <div class="slide">
-      <img src="/icons/page3.jpg" alt="Slide 3">
-      <div class="overlay">
-        <h2>Holistic Wellness</h2>
-        <p>Balance your body, mind & soul</p>
-      </div>
-    </div>
-
   </div>
-
   <button class="prev">❮</button>
   <button class="next">❯</button>
-
 </section>
 
-
-
-
-
-
-
-
-
-<!-- ABOUT / Ayurveda Section -->
+<!-- ABOUT -->
 <section class="about">
-  <img src="{{about.image}}" alt="Ayurveda">
-
+  <img src="{{about.image}}">
   <div>
     <h2>{{about.title}}</h2>
     <p>{{about.description}}</p>
-
-    <a href="{{about.button.link}}" class="btn">
-      {{about.button.text}}
-    </a>
+    <a href="{{about.button.link}}" class="btn">{{about.button.text}}</a>
   </div>
 </section>
 
-
-
-<!-- DOCTORS SECTION -->
-<section class="doctors py-20 bg-white text-center">
-  <h2 class="text-4xl font-bold mb-4">{{doctors.title}}</h2>
-  <p class="text-gray-700 mb-12">{{doctors.subtitle}}</p>
-
-  <div class="cards grid md:grid-cols-3 gap-8">
+<!-- DOCTORS -->
+<section class="doctors">
+  <h2>{{doctors.title}}</h2>
+  <p>{{doctors.subtitle}}</p>
+  <div class="cards">
     {{#each doctors.items}}
-      <div class="card p-6 bg-green-50 rounded-2xl shadow-lg hover:scale-105 transition-transform">
-        <img src="{{this.image}}" alt="{{this.name}}" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
-        <h3 class="text-xl font-semibold">{{this.name}}</h3>
-        <p class="text-green-700 font-medium mb-2">{{this.specialization}}</p>
-        <p class="text-gray-700">{{this.bio}}</p>
+      <div class="card">
+        <img src="{{this.image}}">
+        <h3>{{this.name}}</h3>
+        <p class="specialization">{{this.specialization}}</p>
+        <p>{{this.bio}}</p>
       </div>
     {{/each}}
   </div>
 </section>
-
-
-
 
 <!-- TESTIMONIALS -->
-<section class="testimonials py-20 bg-green-50 text-center">
-  <h2 class="text-4xl font-bold mb-12">{{testimonials.title}}</h2>
+<section class="testimonials-section">
+  <h2 class="testimonials-title">{{testimonials.title}}</h2>
 
-  <div class="cards grid md:grid-cols-3 gap-8">
-    {{#each testimonials.items}}
-      <div class="card p-6 bg-white rounded-2xl shadow-lg hover:scale-105 transition-transform">
-        <p class="text-gray-700 mb-4">“{{this.quote}}”</p>
-        <span class="font-semibold text-gray-900">— {{this.author}}</span>
+  <div class="testimonial-wrapper">
+    <button class="testimonial-nav prev" onclick="moveTestimonial(-1)">❮</button>
+
+    <div class="testimonial-viewport">
+      <div class="testimonial-track" id="testimonialTrack">
+        {{#each testimonials.items}}
+          <div class="testimonial-card">
+            <h3 class="name">{{this.name}}</h3>
+            <div class="divider"></div>
+            <p class="testimonial-text">{{this.message}}</p>
+            <span class="quote-mark">”</span>
+          </div>
+        {{/each}}
       </div>
-    {{/each}}
+    </div>
+
+    <button class="testimonial-nav next" onclick="moveTestimonial(1)">❯</button>
+  </div>
+</section>
+
+
+
+<!-- REVIEW FORM --><section class="review-bar">
+  <div class="review-bar-text">
+    <h3>Share Your Wellness Story</h3>
+    <p>Your experience helps others begin their healing journey with confidence.</p>
   </div>
 
-  <a href="{{testimonials.button.link}}" class="btn-outline mt-10 inline-block px-6 py-3 rounded-xl border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white transition">
-    {{testimonials.button.text}}
-  </a>
-</section>
+  <form id="reviewForm" class="review-bar-form" onsubmit="submitReview(); return false;">
+    <input
+      type="text"
+      id="name"
+      placeholder="Your Name"
+      required
+    />
 
-<!--share your review-->
+    <input
+      type="text"
+      id="message"
+      placeholder="Your Review"
+      required
+    />
 
-<section class="review-section py-20 bg-white text-center">
-  <h2 class="text-3xl font-bold mb-4">Share Your Wellness Story</h2>
-  <p class="text-gray-700 mb-8">Your words guide others to true Ayurvedic healing.</p>
-
-  <form id="reviewForm" class="review-form max-w-xl mx-auto" onsubmit="submitReview(); return false;">
-    <div class="form-group mb-4">
-      <label class="block mb-1 font-medium">Your Name</label>
-      <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg" placeholder="Enter your full name" required>
-    </div>
-
-    <div class="form-group mb-4">
-      <label class="block mb-1 font-medium">Your Healing Review</label>
-      <textarea id="message" class="w-full px-4 py-2 border rounded-lg" placeholder="Share how Vishwaprakriti transformed your wellness." required></textarea>
-    </div>
-
-    <button type="submit" class="btn bg-green-500 text-white px-6 py-3 rounded-xl hover:bg-green-600 transition">Submit Review</button>
-    <p id="reviewStatus" class="mt-4 text-green-600 font-medium"></p>
+    <button type="submit">Submit</button>
+	
   </form>
+  <p id="reviewStatus"></p>
 </section>
 
-<script>
-function submitReview() {
-  const name = document.getElementById('name').value;
-  const message = document.getElementById('message').value;
 
-  fetch('/api/reviews', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, message })
-  })
-  .then(r => r.text())
-  .then(msg => {
-    document.getElementById('reviewStatus').innerText = "Thank you! Your review has been submitted.";
-    document.getElementById('reviewForm').reset();
-  })
-  .catch(err => {
-    document.getElementById('reviewStatus').innerText = "Oops! Something went wrong.";
-  });
-}
-</script>
-
-
-
+<script src="css/home.js"></script>

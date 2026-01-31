@@ -264,7 +264,7 @@ body {
 /* PRIMARY BUTTON */
 /* ===================== */
 .btn,
-.review-form button {
+ {
   display: inline-block;
   margin-top: 25px;
   padding: 12px 34px;
@@ -281,71 +281,10 @@ body {
 }
 
 .btn:hover,
-.review-form button:hover {
+ {
    background: #9b6b57; 
   transform: translateY(-1px) scale(1.03);
   box-shadow: 0 16px 32px rgba(0,0,0,0.18);
-}
-
-/* ===================== */
-/* TESTIMONIALS */
-/* ===================== */
-.testimonials {
-  background: #f2ede8;  /* soft beige/light brown background */
-  padding: 90px 20px;
-  text-align: center;
-}
-
-.testimonials h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 34px;
-  font-weight: 400;
-  color: #422b23; 
-  margin-bottom: 50px;
-}
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #ffffff;
-  padding: 35px;
-  width: 300px;
-  border-radius: 18px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.05);
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-.card::before {
-  content: "“";
-  position: absolute;
-  font-family: 'Playfair Display', serif;
-  font-size: 60px;
-  color: rgba(122,82,67,0.25);
-  top: -18px;
-  left: 20px;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.09);
-}
-
-.card p {
-  font-style: italic;
-  line-height: 1.7;
-}
-
-.card span {
-  display: block;
-  margin-top: 15px;
-  color: #6e5249;
 }
 
 /* ===================== */
@@ -405,94 +344,114 @@ footer {
 /* ===================== */
 /* REVIEW SECTION - ELEGANT VERSION */
 /* ===================== */
-.review-section {
-  max-width: 520px;               /* reduced width */
-  margin: 60px auto;              /* slightly less vertical spacing */
-  padding: 30px 25px;             /* reduced padding */
-  background: #f9f4f1;            /* soft off-white */
-  border-radius: 20px;            /* slightly more rounded corners */
-  box-shadow: 0 12px 28px rgba(66,43,35,0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+/* ===================== */
+/* SHARE REVIEW – PREMIUM */
+/* ===================== */
 
-.review-section:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 38px rgba(66,43,35,0.12);
+.review-section {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 60px 70px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(66,43,35,0.12);
 }
 
 .review-section h2 {
-  font-size: 28px;                /* smaller and elegant */
-  margin-bottom: 8px;
-  color: #422b23;                 /* matches your theme */
+  font-size: 34px;
+  font-family: 'Playfair Display', serif;
+  color: #422b23;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.review-section .subtitle {
-  color: #5c4a44; 
-  margin-bottom: 25px;
-  font-size: 14px;
+.review-subtitle {
   text-align: center;
+  font-size: 15px;
+  color: #5c4a44;
+  margin-bottom: 45px;
+  line-height: 1.7;
 }
 
-.review-form .form-group {
-  margin-bottom: 18px;            /* less spacing */
+/* FORM LAYOUT */
+.review-form {
+  display: grid;
+  gap: 22px;
 }
 
 .review-form label {
-  font-weight: 600;
-  color: #333;
   font-size: 14px;
+  font-weight: 600;
+  color: #422b23;
+  margin-bottom: 6px;
+  display: block;
 }
 
+/* INPUTS */
 .review-form input,
 .review-form textarea {
   width: 100%;
-  padding: 12px 14px;             /* slightly smaller padding */
+  padding: 14px 16px;
   font-size: 14px;
-  border-radius: 12px;            /* softer corners */
-  border: 1px solid #ccc;
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.12s ease;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  background: #faf8f6;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .review-form textarea {
-  min-height: 120px;              /* reduced height */
+  min-height: 120px;
   resize: vertical;
 }
 
 .review-form input:focus,
 .review-form textarea:focus {
-  border-color: #7a5243;
-  box-shadow: 0 0 0 3px rgba(122,82,67,0.15);
-  transform: translateY(-1px);
+  outline: none;
+  border-color: #422b23;
+  box-shadow: 0 0 0 3px rgba(66,43,35,0.15);
+  background: #ffffff;
 }
 
+/* BUTTON */
 .review-form button {
-  display: block;
-  margin: 15px auto 0;            /* center button */
-  padding: 10px 26px;             /* slightly smaller */
-  background: #7a5243;
+  align-self: center;
+  margin-top: 20px;
+  padding: 14px 36px;
+  background: #422b23;
   color: #ffffff;
-  border-radius: 24px;
   font-size: 13px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  border-radius: 999px;
+  border: none;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  text-transform: uppercase;
+  box-shadow: 0 12px 30px rgba(66,43,35,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .review-form button:hover {
-  background: #9b6b57;
-  transform: translateY(-1px) scale(1.02);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.14);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 45px rgba(66,43,35,0.3);
 }
 
+/* STATUS MESSAGE */
 #reviewStatus {
-  margin-top: 12px;
-  color: #422b23;
-  font-weight: 500;
   text-align: center;
-  font-size: 13px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #422b23;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .review-section {
+    padding: 45px 24px;
+    margin: 60px 16px;
+  }
+
+  .review-section h2 {
+    font-size: 28px;
+  }
 }
 
 /* ===================== */
@@ -599,12 +558,14 @@ nav a:hover {
 }
 
 /* Name & specialization */
-.doctors .card h3 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #422b23;
-  margin-bottom: 6px;
+
+.doctor-card h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3a1f0f;
 }
+
 
 .doctors .card p {
   font-size: 14px;
@@ -632,3 +593,30 @@ nav a:hover {
     font-size: 28px;
   }
 }
+
+@media (max-width: 768px) {
+  .review-section {
+    max-width: 100%;
+    padding: 18px 16px;
+  }
+}
+
+
+
+
+
+.testimonial-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #d1c7c3;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.testimonial-dots button.active {
+  background: #422b23;
+  transform: scale(1.3);
+}
+  

@@ -16,35 +16,86 @@ data:
       image: "icons/pslide3.jpg"
 
   products:
-    - title: "Nityam Suvarnaprashan1"
-      description: "Immunity booster for kids"
+    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Test"
+      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
       features:
         - "Boosts immunity"
         - "Improves memory"
+        - "Supports digestive health"
+        - "Safe, natural & chemical-free"
+        - "Boosts immunity"
+
       button_text: "Order Now"
       image: "/icons/product1.jpg"
-
-    - title: "Nityam Suvarnaprashan2"
-      description: "Immunity booster for kids"
+    - title: "Gajanan"
+      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
       features:
         - "Boosts immunity"
         - "Improves memory"
+        - "Supports digestive health"
+        - "Safe, natural & chemical-free"
+        - "Boosts immunity"
+
+      button_text: "Order Now"
+      image: "/icons/productG.jpg"
+
+    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
+      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
+      features:
+        - "Boosts immunity"
+        - "Improves memory"
+        - "Supports digestive health"
+        - "Safe, natural & chemical-free"
+        - "Boosts immunity"
+
       button_text: "Order Now"
       image: "/icons/product2.jpg"
 
-    - title: "Nityam Suvarnaprashan3"
-      description: "Immunity booster for kids"
+    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
+      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
       features:
         - "Boosts immunity"
         - "Improves memory"
+        - "Supports digestive health"
+        - "Safe, natural & chemical-free"
+        - "Boosts immunity"
+
+      button_text: "Order Now"
+      image: "/icons/product1.jpg"
+
+    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
+      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
+      features:
+        - "Boosts immunity"
+        - "Improves memory"
+        - "Supports digestive health"
+        - "Safe, natural & chemical-free"
+        - "Boosts immunity"
+
+      button_text: "Order Now"
+      image: "/icons/product2.jpg"
+
+    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
+      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
+      features:
+        - "Boosts immunity"
+        - "Improves memory"
+        - "Supports digestive health"
+        - "Safe, natural & chemical-free"
+        - "Boosts immunity"
+
       button_text: "Order Now"
       image: "/icons/product3.jpg"
 
-    - title: "Gajanan Nityam Suvarnaprashan4"
-      description: "Aasdl;saaaaaaaaaaaa"
+    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
+      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
       features:
         - "Boosts immunity"
         - "Improves memory"
+        - "Supports digestive health"
+        - "Safe, natural & chemical-free"
+        - "Boosts immunity"
+
       button_text: "Order Now"
       image: "/icons/product4.jpg"
 

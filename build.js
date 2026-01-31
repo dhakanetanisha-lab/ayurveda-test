@@ -37,8 +37,8 @@ const homepage = loadYAML('./content/homepage.yml');
 
 homepage.testimonials ||= {};
 homepage.testimonials.items = reviews.approved.map(r => ({
-  quote: r.message,
-  author: r.name
+  message: r.message,
+  name: r.name
 }));
 
 buildPage(
@@ -58,4 +58,15 @@ buildPage(
   'Products | Vishwaprakriti Ayurveda'
 );
 
+
+/* GALLERY */
+// -------- PRODUCTS --------
+const gallery = loadYAML('./content/gallery.yml');
+
+buildPage(
+  'gallery',
+  './templates/gallery.html',
+  './public/gallery.html',
+  'Gallery | Vishwaprakriti Ayurveda'
+);
 console.log('✔ Build complete');
