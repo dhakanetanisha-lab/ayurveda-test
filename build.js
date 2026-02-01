@@ -3,7 +3,9 @@ const path = require('path');
 const yaml = require('js-yaml');
 const Handlebars = require('handlebars');
 
-/* ---------- HELPERS ---------- */
+/* =====================================================
+   HELPERS
+===================================================== */
 
 function loadYAML(file) {
   return yaml.load(fs.readFileSync(file, 'utf8'));
@@ -17,25 +19,45 @@ function loadReviews() {
   return raw ? JSON.parse(raw) : { pending: [], approved: [] };
 }
 
-function buildPage(content, template, output, title) {
-  const layout = fs.readFileSync('./templates/layout.html', 'utf8');
-  const body = fs.readFileSync(template, 'utf8');
+/* =====================================================
+   BUILD PAGE (FINAL, CORRECT)
+===================================================== */
 
-  const bodyHTML = Handlebars.compile(body)(content);
-  const finalHTML = Handlebars.compile(layout)({
+function buildPage(data, pageTemplatePath, outputPath, title) {
+  const layoutTemplatePath = './templates/layout.html';
+
+  const layoutSource = fs.readFileSync(layoutTemplatePath, 'utf8');
+  const pageSource = fs.readFileSync(pageTemplatePath, 'utf8');
+
+  const layoutTemplate = Handlebars.compile(layoutSource);
+  const pageTemplate = Handlebars.compile(pageSource);
+
+  // render page body first
+  const bodyHTML = pageTemplate(data);
+
+  // inject body into layout
+  const finalHTML = layoutTemplate({
+    ...data,
     title,
-    body: bodyHTML,
-    footer: content.footer
+    body: bodyHTML
   });
 
-  fs.writeFileSync(output, finalHTML, 'utf8');
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+  fs.writeFileSync(outputPath, finalHTML, 'utf8');
+
+  console.log(`✔ Built: ${outputPath}`);
 }
 
-/* ---------- REVIEWS ---------- */
+/* =====================================================
+   LOAD GLOBAL DATA
+===================================================== */
 
+const layoutData = loadYAML('./content/layout.yml');
 const reviews = loadReviews();
 
-/* ---------- HOMEPAGE ---------- */
+/* =====================================================
+   HOMEPAGE
+===================================================== */
 
 const homepage = loadYAML('./content/homepage.yml');
 
@@ -46,47 +68,62 @@ homepage.testimonials.items = reviews.approved.map(r => ({
 }));
 
 buildPage(
-  homepage,
+  {
+    ...layoutData,
+    ...homepage
+  },
   './templates/homepage.html',
   './public/index.html',
   'Vishwaprakriti Ayurveda'
 );
 
-/* ---------- PRODUCTS ---------- */
+/* =====================================================
+   PRODUCTS
+===================================================== */
 
 const products = loadYAML('./content/products.yml');
 
 buildPage(
-  products,
+  {
+    ...layoutData,
+    ...products
+  },
   './templates/products.html',
   './public/products.html',
   'Products | Vishwaprakriti Ayurveda'
 );
 
-/* ---------- PRODUCTS ---------- */
+/* =====================================================
+   SERVICES
+===================================================== */
 
 const services = loadYAML('./content/services.yml');
 
 buildPage(
-  services,
+  {
+    ...layoutData,
+    ...services
+  },
   './templates/services.html',
   './public/services.html',
-  'services | Vishwaprakriti Ayurveda'
+  'Services | Vishwaprakriti Ayurveda'
 );
 
-/* ---------- GALLERY (FIXED) ---------- */
-// -------- GALLERY --------
-const gallery = loadYAML('./content/gallery.yml');
+/* =====================================================
+   GALLERY
+===================================================== */
 
-// normalize images if empty
+const gallery = loadYAML('./content/gallery.yml');
 gallery.images ||= [];
 
 buildPage(
-  gallery,
+  {
+    ...layoutData,
+    ...gallery
+  },
   './templates/gallery.html',
   './public/gallery.html',
   'Gallery | Vishwaprakriti Ayurveda'
 );
-
 
 console.log('✔ Build complete');

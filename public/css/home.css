@@ -332,14 +332,14 @@ body {
 footer {
   background: #422b23;
   color: #fdfcf9;
-  padding: 70px 20px;
+  padding: 30px 10%;
 }
 
 .footer-grid {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 24px;
 }
 
 .footer-grid a {
@@ -353,10 +353,8 @@ footer {
 }
 
 .copy {
-  text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 13px;
-  opacity: 0.8;
 }
 
 

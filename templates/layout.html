@@ -22,19 +22,39 @@
 
 <header class="top-header">
 
-  <div class="top-bar">
-    <div class="contact-info">
-      📞 +91 98765 43210 &nbsp; | &nbsp;
-      ✉️ info@vishwaprakritiayurveda.com
-    </div>
+<div class="top-bar">
+  <div class="contact">
+    {{#if site.contact.phone}}
+      <span>📞 {{site.contact.phone}}</span>
+    {{/if}}
 
-    <div class="social-icons">
-	  <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-	  <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-	  <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-	</div>
-
+    {{#if site.contact.email}}
+      <span>✉️ {{site.contact.email}}</span>
+    {{/if}}
   </div>
+   <div>whatsapp</div>
+  <div class="whatsapp-contact"> 
+    {{#if site.whatsapp.number}}
+      <span>{{site.whatsapp.number}}</span>
+    {{/if}}
+  </div>
+
+
+  <div class="social-ico">
+    {{#if site.social.facebook}}
+      <a href="{{site.social.facebook}}" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> 
+    {{/if}}
+
+    {{#if site.social.instagram}}
+      <a href="{{site.social.instagram}}" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    {{/if}}
+
+    {{#if site.social.twitter}}
+      <a href="{{site.social.twitter}}" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    {{/if}}
+  </div>
+</div>
+
 
   <div class="header-main">
     <nav class="site-nav">
@@ -93,38 +113,35 @@
     <div>
 
       <h3>Quick Links</h3>
+	  
+	<section class="map-section">
+	  <iframe
+		src="{{Mapsite.location.googleMapEmbed}}"
+		width="100%"
+		height="350"
+		style="border:0;"
+		allowfullscreen
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade">
+	  </iframe>
+	</section>
+
+
 
       <ul>
 
-        <li>Home</li>
-
-        <li>About</li>
-
-        <li>Treatments</li>
-
-        <li>Contact</li>
+		<li><a href="/index.html">Home</a></li>
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/services.html">Services</a></li>
 
       </ul>
-
     </div>
-
- 
-
-    <div>
-
-      <h3>Contact</h3>
-
-      <p>📞 +91 98765 43210</p>
-
-      <p>✉️ info@vishwaprakritiayurveda.com</p>
-
-    </div>
-
   </div>
 
  
 
-  <p class="copy">© 2026 Vishwaprakriti Ayurveda</p>
+  <p class="copy">© 2026  Ayurveda</p>
 
 </footer>
 

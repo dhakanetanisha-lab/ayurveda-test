@@ -1,4 +1,10 @@
-const ADMIN_WHATSAPP = '919876543210'; // CHANGE THIS
+const el = document.querySelector('.whatsapp-contact span');
+const ADMIN_WHATSAPP = el?.innerText.replace(/\D/g, '');
+
+console.log(ADMIN_WHATSAPP); // 919890298802 
+
+
+
 
 function openAppointmentModal() {
   document.getElementById('appointmentModal').style.display = 'block';

@@ -52,7 +52,14 @@ function placeOrder() {
     return;
   }
 
-  const adminPhone = '918793651429';
+const el = document.querySelector('.whatsapp-contact span');
+const adminPhone = el?.innerText.replace(/\D/g, '');
+
+console.log(adminPhone); // 919890298802 
+
+
+
+ // const adminPhone = '918793651429';
 
   const message = `
 🛒 *New Order*
