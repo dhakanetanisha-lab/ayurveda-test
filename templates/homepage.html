@@ -28,15 +28,36 @@
   <button class="next">❯</button>
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT 
 <section class="about">
   <img src="{{about.image}}">
   <div>
     <h2>{{about.title}}</h2>
     <p>{{about.description}}</p>
-    <a href="{{about.button.link}}" class="btn">{{about.button.text}}</a>
+    <a href="{{about.button.link}}" class="btn">{{about.button.text}}</a> 
   </div>
 </section>
+-->
+<section class="about">
+  {{#each about.items}}
+    <div class="about-item">
+      <img src="{{this.image}}" alt="{{this.title}}">
+
+      <div class="about-text">
+        <h2>{{this.title}}</h2>
+        <p>{{this.description}}</p>
+
+        {{#if this.button}}
+          <a href="{{this.button.link}}" class="about-btn">
+            {{this.button.text}}
+          </a>
+        {{/if}}
+      </div>
+    </div>
+  {{/each}}
+</section>
+
+
 
 <!-- DOCTORS -->
 <section class="doctors">

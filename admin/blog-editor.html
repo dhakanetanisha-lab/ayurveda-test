@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog / Article Editor</title>
+
+<!-- TinyMCE -->
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+
+<link rel="stylesheet" href="blog-editor.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+  <h1>Blog & Article Editor</h1>
+
+  <!-- NAV -->
+  <div class="card">
+    <div class="editor-header">
+      <h2>Article Content</h2>
+
+      <div class="page-tabs">
+        <button class="tab active" data-page="blog">Blog</button>
+        <button class="tab" data-page="article">Article</button>
+      </div>
+    </div>
+
+    <!-- TITLE -->
+    <input id="title" class="title-input" placeholder="Enter title here">
+
+    <!-- RICH TEXT EDITOR -->
+    <textarea id="editor"></textarea>
+
+    <br>
+    <button class="primary" onclick="save()">Save & Publish</button>
+  </div>
+</div>
+
+<script src="blog-editor.js"></script>
+</body>
+</html>

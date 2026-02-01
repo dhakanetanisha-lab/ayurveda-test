@@ -27,20 +27,35 @@ essence:
  
 
 about:
+    
+  items:
+    - image: "icons/ayurveda.jpg"
 
-  image: "icons/ayurveda.jpg"
+      title: "Ever wondered what Ayurveda really is? Unlock its holistic magic!"
 
-  title: "Ever wondered what Ayurveda really is? Unlock its holistic magic!"
+      description: 
 
-  description: 
+        Testing Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a "Science of Life" blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge).
 
-    Testing Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a "Science of Life" blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge).
+      button:
 
-  button:
+        text: "Curious? Read More"
 
-    text: "Curious? Read More"
+        link: "/ayurveda.html"
 
-    link: "/ayurveda.html"
+    - image: "icons/clinic.jpg"
+
+      title: "Clinic information"
+
+      description: 
+
+        Testing Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a "Science of Life" blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge).
+
+      button:
+
+        text: "Curious? Read More"
+
+        link: "/ayurveda.html"
 
 
 doctors:
