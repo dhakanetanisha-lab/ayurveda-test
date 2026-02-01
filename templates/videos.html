@@ -1,0 +1,26 @@
+<section class="videos">
+
+  <h1>{{videos.heading}}</h1>
+
+  <div class="video-grid">
+    {{#each videos.items}}
+      <a
+        href="https://www.youtube.com/watch?v={{this.videoId}}"
+        class="video-card"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="thumb">
+          <img
+            src="https://img.youtube.com/vi/{{this.videoId}}/hqdefault.jpg"
+            alt="{{this.title}}"
+          >
+          <span class="play-btn">▶</span>
+        </div>
+
+        <h3>{{this.title}}</h3>
+      </a>
+    {{/each}}
+  </div>
+
+</section>

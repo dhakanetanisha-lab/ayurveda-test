@@ -1,0 +1,12 @@
+videos:
+  heading: "Ayurveda Videos & Talks"
+
+  items:
+    - title: "What is Ayurveda?"
+      videoId: "8jD0by-Jzog"
+
+    - title: "Panchakarma Explained"
+      videoId: "VIDEO_ID_2"
+
+    - title: "Daily Ayurveda Routine"
+      videoId: "VIDEO_ID_3"

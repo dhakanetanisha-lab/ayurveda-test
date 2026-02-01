@@ -126,4 +126,21 @@ buildPage(
   'Gallery | Vishwaprakriti Ayurveda'
 );
 
+
+/* =====================================================
+   VIDEOS
+===================================================== */
+
+const videos = loadYAML('./content/videos.yml');
+
+buildPage(
+  {
+    ...layoutData,
+    ...videos
+  },
+  './templates/videos.html',
+  './public/videos.html',
+  'videos | Vishwaprakriti Ayurveda'
+);
+
 console.log('✔ Build complete');
