@@ -1,6 +1,3 @@
-logo1:
-  image: "icons/clinic.jpg"
-
 slider:
   auto_slide_ms: 1000
   items:

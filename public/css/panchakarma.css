@@ -1,3 +1,10 @@
+/* Add breathing space before slider */
+.slider {
+  margin-top: 10px;
+}
+
+
+
 /* ============================= */
 /* PAGE HEADER */
 /* ============================= */
@@ -97,5 +104,9 @@ h3::before {
 
   .content-block h2 {
     font-size: 19px;
+  }
+  
+    .slider {
+    height: 260px;
   }
 }

@@ -2,16 +2,16 @@
 /* ESSENCE */
 /* ===================== */
 .essence {
-  padding: 90px 20px;
+  padding: 20px 5px;  /* reduced from 90px to 50px */
   text-align: center;
 }
 
 .essence h1 {
   font-family: 'Playfair Display', serif;
   color: #422b23;
-  font-size: 42px;
+  font-size: 36px;     /* slightly smaller */
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* reduced margin */
 }
 
 .essence p {
@@ -19,8 +19,10 @@
   margin: 0;
   text-align: center;
   color: #5c4a44;
-  line-height: 1.8;
+  line-height: 1.6;   /* slightly tighter */
+  font-size: 16px;    /* optional: reduce font-size if needed */
 }
+
 
 /* ===================== */
 /* HOMDETAILS SECTION */

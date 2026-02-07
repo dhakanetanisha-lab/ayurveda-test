@@ -15,8 +15,6 @@ slider:
       subtext: "Balance your body, mind & soul"
       
 data:
-  site:
-    title: "Gangai Hospital Products"
   products:
     - title: "Face Wash"
       description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"

@@ -15,10 +15,6 @@ slider:
       subtext: "Balance your body, mind & soul"
       
 data:
-  site:
-    title: "Gangai Hospital - Services"
-
-
   servicess:
     - title: "Vaman"
       description: "Vaman is a purification therapy that expels vitiated Kapha and Pitta doshas from the body through therapeutic vomiting.

@@ -1,5 +1,24 @@
-<section class="content-section">
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slides">
+    {{#each slider.items}}
+      <div class="slide {{#if @first}}active{{/if}}">
+        <img src="{{this.image}}" alt="{{this.heading}}">
+        <div class="overlay">
+          <h2>{{this.heading}}</h2>
+          <p>{{this.subtext}}</p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
 
+  <button class="prev">❮</button>
+  <button class="next">❯</button>
+</section>
+
+
+
+<section class="content-section">
   <!-- HERO HEADER -->
   <header class="page-header">
     <div class="header-inner">
@@ -24,3 +43,6 @@
   {{/each}}
 
 </section>
+<script>
+  window.autoSlideTime = {{slider.auto_slide_ms}};
+</script>
