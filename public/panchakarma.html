@@ -51,7 +51,10 @@
 
 
   <div class="header-main">
-    <nav class="site-nav">
+	<div class="hamburger" id="hamburger">
+    <i class="fa fa-bars"></i>
+    </div>
+    <nav class="site-nav" id="siteNav">
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/aboutus.html">About</a></li>
@@ -240,6 +243,15 @@
   <p class="copy">© 2026  Ayurveda</p>
 
 </footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const siteNav = document.getElementById('siteNav');
+
+hamburger.addEventListener('click', () => {
+  siteNav.classList.toggle('show');
+});
+</script>
 
 <script src="css/slider.js"></script>
 <script src="css/appointment.js"></script>

@@ -21,14 +21,14 @@
 /* LOGO (TOP CENTER) */
 /* ===================== */
 
-.logo {
+.logo1 {
   width: 100%;
   text-align: center;
   padding: 20px 0 10px;
   background: #f3f8f4; /* soft herbal background */
 }
 
-.logo img {
+.logo1 img {
   max-height: 90px;
   width: auto;
   display: inline-block;

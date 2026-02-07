@@ -1,6 +1,7 @@
 /* ===================== */
 /* HEADER MAIN LAYOUT FIX */
 /* ===================== */
+
 .header-main {
   display: flex;
   justify-content: space-between;
@@ -12,8 +13,6 @@
 .top-actions .btn {
   margin-top: 0;
 }
-
-
 
 /* ===================== */
 /* GLOBAL */
@@ -564,4 +563,69 @@ body {
     text-align: center;
   }
 
+}
+
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto;
+  color: #fdfaf4;
+}
+
+/* ===================== MOBILE ===================== */
+@media (max-width: 768px) {
+
+  /* Hamburger icon */
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fdfaf4;
+    margin-left: auto;
+  }
+
+  /* Keep header-main height fixed */
+  .header-main {
+    position: relative;  /* needed for absolute dropdown */
+    flex-direction: row; /* keep logo + button in a row */
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+  /* Navigation menu hidden initially as absolute dropdown */
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%; /* directly below header-main */
+    left: 0;
+    width: 100%;
+    background: #6b8f71;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    border-radius: 0 0 6px 6px;
+    z-index: 100;
+  }
+
+  /* Show nav when toggled */
+  .site-nav.show {
+    display: flex;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .top-actions {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
 }
