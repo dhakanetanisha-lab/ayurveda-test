@@ -111,6 +111,75 @@
   }
 }
 
+/* ===================== */
+/* RESPONSIVE: Mobile / Tablet */
+/* ===================== */
+@media (max-width: 992px) {
+ .about-item {
+    flex-direction: column !important; /* force vertical stacking */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .about img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p, .homedetails ul {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-item {
+    flex-direction: column !important; /* force vertical stacking */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .about img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .about-text {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-item {
+    flex-direction: column !important; /* force vertical stacking */
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .about img {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+  }
+
+  .about-text {
+    width: 100% !important;
+  }
+}
+
+
 
 /* ===================== */
 /* DOCTORS SECTION */
