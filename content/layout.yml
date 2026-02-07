@@ -1,17 +1,17 @@
 site:
   contact:
-    phone: "+91 9890298801/9890298802"
-    email: "info@example.com"
+    phone: "+91 9309448494/01169269751"
+    email: "gangaihospital315@gmail.com"
   whatsapp:
-    number: "919890298802"   # country code, no +, no spaces
+    number: "919309448494"   # country code, no +, no spaces
     
   social:
     facebook: "https://facebook.com"
-    instagram: "https://instagram.com/xyz"
+    instagram: "https://www.instagram.com/gangaihospital?igsh=cXUzeW1zb2pkYXI="
     twitter: "https://twitter.com/yourpage"
 
 Mapsite:
   location:
-    googleMapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10690.117408366876!2d73.80263761653485!3d18.685198343057277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b7975ceaf833%3A0x78ea381a830714b9!2sShine%20City%2C%20Chikhali%2C%20Vitthal%20Nagar%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411062!5e0!3m2!1sen!2sin!4v1769953152283!5m2!1sen!2sin"
+    googleMapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.9376349348613!2d76.2617214!3d20.344194899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda1181d43eba51%3A0xc10a1335928d16f7!2sGangai%20Hospital%20And%20Ayurvedic%20Hospital%20%7C%20Dr.%20Pandhari%20Ingle%20-%20Best%20Ayurveda%20Hospital%20In%20Chikhli%20%7C%20Best%20Spine%20Hospital!5e0!3m2!1sen!2sin!4v1770024123102!5m2!1sen!2sin"
 
 

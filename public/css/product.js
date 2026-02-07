@@ -1,4 +1,4 @@
-
+/*
   const track = document.querySelector('.carousel-track');
   const slide = document.querySelectorAll('.carousel-slide');
   const prevBtn = document.querySelector('.carousel-btn.prev');
@@ -19,7 +19,7 @@
     index = (index - 1 + slide.length) % slide.length;
     updateCarousel();
   });
-
+*/
 
 let currentProduct = '';
 

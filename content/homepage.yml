@@ -5,61 +5,67 @@ essence:
 
     Experience the true essence of wellness with Vishwaprakriti Ayurveda.
 
-  subtext: "Test Rooted in timeless wisdom, nurtured by nature. Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a Science of Life blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge)." 
+  subtext: "Embrace Holistic Health and Harmony with Vishwaprakriti Ayurveda" 
 
 
- 
+slider:
+  auto_slide_ms: 1000
+  items:
+    - image: "/icons/page1.jpg"
+      heading: "Authentic Ayurveda"
+      subtext: "Healing rooted in ancient wisdom"
 
-about:
+    - image: "/icons/page2.jpg"
+      heading: "Natural Therapies"
+      subtext: "Pure, personalized treatments"
+
+    - image: "/icons/page3.jpg"
+      heading: "Holistic Wellness"
+      subtext: "Balance your body, mind & soul"
+
+
+homedetails:
     
   items:
     - image: "icons/ayurveda.jpg"
 
       title: "Ever wondered what Ayurveda really is? Unlock its holistic magic!"
 
-      description: 
+      content_html: 
 
-        Testing Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a "Science of Life" blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge).
+        <h3>Ayurveda for Everyday Life</h3>
+        
+        <p>
+        Ayurveda is best described as the art of living in harmony with the laws of nature. An ancient Indian system of natural and holistic medicine, it promotes living a balanced life by bringing about healthy and natural lifestyle changes. The age old wisdom contained in Ayurveda is as relevant today as it was back in the time. Ayurveda and its principles can easily be adapted in today’s fast paced life to maintain and lead a healthy, stress free and balanced life.
+        Ayurveda has three main focuses- healing, prevention & healthcare. Health care includes maintenance of good health as well as rejuvenation and methods to achieve longevity. Ayurvedic Home Remedies can prove effective in treating various ailments. But the main focus is on prevention as it is easier to maintain health than to restore it once it has become a wreck.
+        </p>
+        
+        <p>
+        Ayurveda places great amount of importance on one’s pathya, eating habits and daily routine. It also provides guidance on how one can adjust lifestyle according to the surroundings and inclusion of ayurvedic products and medicinal plants to lead a healthy lifestyle. Including Ayurveda in your everyday life does not require you to undergo a major lifestyle change. Small and minor things like opting for natural or organic ingredients instead of chemically treated products and food items can do the trick.
+        </p>
+        
+        <p>
+        Moving on from a sedentary lifestyle to a more active one that would include routine exercises like walking can go a long way in keeping you healthy and fit. Drinking fresh juice instead of canned or preservative laden juices and including seasonal & fresh vegetables in your meal will block creation of ama or toxins in the body thus keeping you fresh and active whole day long. Apart from this, Ayurveda also recommends drinking plenty of water through the day as it will help flush out harmful toxins from the body and a glass of warm, before bedtime, to prevent indigestion and get a relaxing and good night’s sleep. If you suffer from indigestion, try these easy natural remedies for indigestion for instant relief.
+        </p>
 
+        <p style="color:#6b8e23; font-weight:600;">
+        Benefits of Ayurveda Based Lifestyle
+        </p>
+        <ul>
+          <li>Increases immunity</li>
+          <li>Improves bodily functions</li>
+          <li>Removes disease from the root</li>
+          <li>Relaxes, rejuvenates & revitalizes</li>
+          <li>Promotes longevity</li>
+        </ul>
+        
       button:
 
         text: "Curious? Read More"
 
         link: "/ayurveda.html"
 
-    - image: "icons/clinic.jpg"
-
-      title: "Clinic information"
-
-      description: 
-
-        Testing Ayurveda is a holistic Indian medical system that promotes positive health through a flexible, constitution-based approach. Ayurveda is India’s 5,000-year-old holistic powerhouse—a "Science of Life" blending body, mind, and spirit. From Sanskrit Ayu (life) + Veda (knowledge), it customizes herbs, yoga, diet, and rituals to your unique constitution for peak vitality. Ready to glow from within? Dive into your personalized Ayurvedic journey today!It adapts its techniques to individual health needs and is often called the science of life, from the Sanskrit words Ayu (life) and Veda (knowledge).
-
-      button:
-
-        text: "Curious? Read More"
-
-        link: "/ayurveda.html"
-
-
-doctors:
-  title: "Meet Our Ayurveda Experts"
-  subtitle: "Seasoned practitioners blending ancient wisdom with modern care"
-  items:
-    - name: "Dr. Gajanan Patil"
-      specialization: "Ayurveda & Panchakarma"
-      image: "/icons/doctor1.jpg"
-      bio: "Specialized in traditional Ayurveda treatments and holistic wellness programs."
-    - name: "Dr. Sangeeta Kulkarni"
-      specialization: "Herbal Medicine"
-      image: "/icons/doctor2.jpg"
-      bio: "Expert in herbal therapies and personalized Ayurveda plans."
-    - name: "Dr. Rohit Deshmukh"
-      specialization: "Yoga & Lifestyle"
-      image: "/icons/doctor3.jpg"
-      bio: "Focuses on integrating Ayurveda with Yoga for complete well-being."
-
-
+    
 testimonials:
   title: "Testimonials"
   auto_slide_ms: 4000

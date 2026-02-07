@@ -1,19 +1,23 @@
+
+slider:
+  auto_slide_ms: 1000
+  items:
+    - image: "/icons/page1.jpg"
+      heading: "Authentic Ayurveda"
+      subtext: "Healing rooted in ancient wisdom"
+
+    - image: "/icons/page2.jpg"
+      heading: "Natural Therapies"
+      subtext: "Pure, personalized treatments"
+
+    - image: "/icons/page3.jpg"
+      heading: "Holistic Wellness"
+      subtext: "Balance your body, mind & soul"
+      
 data:
   site:
-    title: "Vishwaprakriti Ayurveda - Services"
+    title: "Gangai Hospital - Services"
 
-  carousel:
-    - title: "Rooted in Nature"
-      subtitle: "Healing begins when nature meets your routine."
-      image: "icons/pslide2.jpg"
-
-    - title: "Rediscover Ancient Healing"
-      subtitle: "Nature’s wisdom blended in every drop."
-      image: "icons/pslide1.jpg"
-
-    - title: "Wellness, The Natural Way"
-      subtitle: "Experience modern living with age-old Ayurvedic balance."
-      image: "icons/pslide3.jpg"
 
   servicess:
     - title: "Vaman"
@@ -21,50 +25,57 @@ data:
 Uses= Effective for chronic colds, coughs, asthma, shortness of breath, skin diseases, psoriasis, vitiligo, diabetes, thyroid disorders, obesity, hyperacidity, indigestion, tonsillitis, lymphatic swelling, recurrent fever, and various Kapha and Pitta-related diseases"
      
       button_text: "Enquire Now"
-      image: "/icons/services1.jpg"
+      image: "/icons/Vaman.jpg"
       
     - title: "Virechan"
       description: "Virechan is a purification therapy that expels vitiated Pitta and Kapha doshas from the body through therapeutic purgation.
 Uses= Beneficial for jaundice, liver diseases, spleen diseases, gallstones, constipation, hyperacidity, hemorrhoids, fistula, piles, various skin diseases (scabies, eczema), diabetes, obesity, worm infestations, urinary disorders, gout, burning sensation in the body, headache, burning in the eyes, chronic fever, herpes, and various Pitta and Kapha-related diseases"
 
       button_text: "Enquire Now"
-      image: "/icons/servicesG.jpg"
+      image: "/icons/Virechan.jpg"
 
     - title: "Basti"
       description: "Basti is a purification therapy where medicated oils or decoctions are administered through the anal route, primarily balancing Vata dosha.
 Uses= Highly beneficial for chronic constipation, bloating, abdominal pain, joint pain, waist pain, knee pain, sciatica, paralysis, tremors, muscle weakness, infertility, sexual debility, menstrual disorders, PCOS, neurological disorders, Parkinson's disease, and various Vata-related diseases."
 
       button_text: "Enquire Now"
-      image: "/icons/services2.jpg"
+      image: "/icons/Basti.jpg"
 
     - title: "Nasya"
       description: "asya involves administering medicated oils or powders through the nostrils, primarily for diseases above the clavicle (neck and head region).
 Uses = Effective for chronic sinusitis, headache, migraine, hair fall, premature graying of hair, ear pain, eye diseases, dental diseases, paralysis of the face, insomnia, stress, memory loss, and various diseases of the head and neck."
 
       button_text: "Enquire Now"
-      image: "/icons/services1.jpg"
+      image: "/icons/Nasya.jpg"
 
     - title: "Swedan (Fomentation/Sweating):"
       description: "Swedan involves various methods of inducing sweating to open up channels and remove toxins.
 Uses= Effective for body aches, stiffness, joint pain, back pain, sciatica, frozen shoulder, muscle cramps, paralysis, swelling, colds, coughs, and various Vata and Kapha-related diseases."
 
       button_text: "Enquire Now"
-      image: "/icons/services2.jpg"
+      image: "/icons/Swedan.jpg"
 
-    - title: "NRaktamokshan"
+    - title: "Raktamokshan"
       description: "Raktamokshan is a purification therapy involving controlled bloodletting to remove vitiated blood.
 Uses= Beneficial for various skin diseases (scabies, eczema, ringworm), chronic wounds, boils, carbuncles, abscesses, vitiligo, psoriasis, gout, arthritis, allergic reactions, and various blood-related disorders."
 
       button_text: "Enquire Now"
-      image: "/icons/services3.jpg"
+      image: "/icons/Raktamokshan.jpg"
 
-    - title: "Abhyanga (Oil Massage):"
+    - title: "Abhyanga (Oil Massage)"
       description: "Abhyanga involves applying medicated oils to the body through massage.
 Uses=Promotes healthy skin, strengthens muscles, relieves fatigue, improves sleep, reduces stress, enhances circulation, and nourishes the body.
 ) Shirodhara (Forehead Oil Drip)"
 
       button_text: "Enquire Now"
-      image: "/icons/services4.jpg"
+      image: "/icons/Abhyanga.jpg"
+      
+    - title: "Shirodhara (Forehead Oil Drip)"
+      description: "Shirodhara involves a continuous stream of medicated oil poured on the forehead.
+Uses= Highly effective for stress, anxiety, insomnia, hypertension, headaches, neurological disorders, hair fall, premature graying, and various diseases of the head"
+
+      button_text: "Enquire Now"
+      image: "/icons/Shirodhara.jpg"
 
   footer:
-    text: "© 2026 Vishwaprakriti Ayurveda"
+    text: "© 2026 Gangai Hospital"

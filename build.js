@@ -74,8 +74,26 @@ buildPage(
   },
   './templates/homepage.html',
   './public/index.html',
-  'Vishwaprakriti Ayurveda'
+  'Gangai Hospital'
 );
+
+
+/* =====================================================
+   ABOUT US
+===================================================== */
+
+const aboutus = loadYAML('./content/aboutus.yml');
+
+buildPage(
+  {
+    ...layoutData,
+    ...aboutus
+  },
+  './templates/aboutus.html',
+  './public/aboutus.html',
+  'aboutus | Gangai Hospital'
+);
+
 
 /* =====================================================
    PRODUCTS
@@ -90,7 +108,7 @@ buildPage(
   },
   './templates/products.html',
   './public/products.html',
-  'Products | Vishwaprakriti Ayurveda'
+  'Products | Gangai Hospital'
 );
 
 /* =====================================================
@@ -106,7 +124,7 @@ buildPage(
   },
   './templates/services.html',
   './public/services.html',
-  'Services | Vishwaprakriti Ayurveda'
+  'Services | Gangai Hospital'
 );
 
 /* =====================================================
@@ -123,7 +141,7 @@ buildPage(
   },
   './templates/gallery.html',
   './public/gallery.html',
-  'Gallery | Vishwaprakriti Ayurveda'
+  'Gallery | Gangai Hospital'
 );
 
 
@@ -140,7 +158,23 @@ buildPage(
   },
   './templates/videos.html',
   './public/videos.html',
-  'videos | Vishwaprakriti Ayurveda'
+  'videos | Gangai Hospital'
+);
+
+/* =====================================================
+   panchakarma
+===================================================== */
+
+const panchakarma = loadYAML('./content/panchakarma.yml');
+
+buildPage(
+  {
+    ...layoutData,
+    ...panchakarma
+  },
+  './templates/panchakarma.html',
+  './public/panchakarma.html',
+  'panchakarma | Gangai Hospital'
 );
 
 console.log('✔ Build complete');

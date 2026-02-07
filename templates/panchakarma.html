@@ -1,0 +1,26 @@
+<section class="content-section">
+
+  <!-- HERO HEADER -->
+  <header class="page-header">
+    <div class="header-inner">
+
+      <div class="header-image">
+        <img src="{{intro.image}}" alt="{{intro.heading}}">
+      </div>
+
+      <div class="header-text">
+        <h1>{{intro.heading}}</h1>
+        <p class="page-intro">{{intro.description}}</p>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  {{#each sections}}
+    <div class="content-block">
+      {{{this.content_html}}}
+    </div>
+  {{/each}}
+
+</section>

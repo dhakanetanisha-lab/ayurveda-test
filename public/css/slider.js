@@ -2,6 +2,9 @@ let currentIndex = 0;
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
+let autoSlideInterval;
+
+// Initialize first slide
 if (totalSlides > 0) {
   slides[currentIndex].classList.add('active');
 }
@@ -21,10 +24,39 @@ function prevSlide() {
   showSlide(currentIndex);
 }
 
-document.querySelector('.next')?.addEventListener('click', nextSlide);
-document.querySelector('.prev')?.addEventListener('click', prevSlide);
+// Start auto slide (3 seconds)
+function startAutoSlide() {
+  if (totalSlides > 1) {
+	
+	const autoSlideTime = window.autoSlideTime || 3000;
 
-// Auto-slide every 5 seconds
-setInterval(() => {
-  if (totalSlides > 1) nextSlide();
-}, 5000);
+	// Auto-slide
+	setInterval(() => {
+	  if (totalSlides > 1) nextSlide();
+	}, autoSlideTime);
+
+
+   // autoSlideInterval = setInterval(nextSlide, 1000); // 3 seconds
+	
+  }
+}
+
+// Reset auto slide when manually clicked
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  startAutoSlide();
+}
+
+// Button events
+document.querySelector('.next')?.addEventListener('click', () => {
+  nextSlide();
+  resetAutoSlide();
+});
+
+document.querySelector('.prev')?.addEventListener('click', () => {
+  prevSlide();
+  resetAutoSlide();
+});
+
+// Start on load
+startAutoSlide();

@@ -1,16 +1,26 @@
 title: Our Healing Gallery
-images:
-  - src: /gallery/panchakarma.jpg
-    caption: Panchakarma therapy session
-  - src: /gallery/herbal-prep.jpg
-    caption: Ayurvedic medicine preparation
-  - src: /gallery/clinic.jpg
-    caption: Ayurvedic medicine preparation
-  - src: /gallery/herbal-prep.jpg
-    caption: Ayurvedic medicine preparation
-  - src: /gallery/herbal-prep.jpg
-    caption: Ayurvedic medicine preparation
-  - src: /gallery/herbal-prep.jpg
-    caption: Ayurvedic medicine preparation
-  - src: /gallery/herbal-prep.jpg
-    caption: Ayurvedic medicine preparation
+
+groups:
+  - caption: Panchakarma Therapy Session
+    images:
+      - /gallery/Gangai Banner All(12)_3.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/Gangai Banner All(12)_4.jpg
+      - /gallery/clinic.jpg
+
+  - caption: Ayurvedic Medicine Preparation
+    images:
+      - /gallery/Gangai Banner All(12)_3.jpg
+      - /gallery/herbal-prep.jpg
+      - /gallery/herbal-prep.jpg
+      - /gallery/herbal-prep.jpg

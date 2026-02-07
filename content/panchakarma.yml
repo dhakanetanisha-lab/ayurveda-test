@@ -1,0 +1,79 @@
+title: Panchakarma
+
+intro:
+  heading: Panchakarma
+  image: "icons/Panchakarma.jpg"
+  description: >
+    Panchakarma means five types of bodily purification, and it must be done by
+    considering factors such as the nature of the disease, body constitution,
+    and season. Just as we service a vehicle regularly, this precious body also
+    needs detoxification and rejuvenation. Panchakarma helps eradicate diseases
+    from the root.
+
+sections:
+  - content_html: |
+      <h2>Avascular Necrosis (AVN)</h2>
+
+      <p>
+        Avascular necrosis (AVN) of the femoral head occurs when the blood supply
+        to the femoral head, which is the rounded end of the femur that fits into
+        the hip socket, is disrupted. Without an adequate blood supply, the bone
+        tissue dies, leading to collapse of the femoral head and degenerative
+        arthritis of the hip joint.
+      </p>
+
+      <p>
+        AVN can be caused by trauma, steroid use, excessive alcohol consumption,
+        and certain medical conditions. Treatment depends on the stage of the
+        disease and may include medication, physical therapy, or surgery.
+      </p>
+
+  - content_html: |
+      <img src="icons/Avascular Necrosis.jpg" alt="Avascular Necrosis">
+
+  - content_html: |
+      <h3>Symptoms</h3>
+      <ul>
+        <li>Initially, there may be no symptoms</li>
+        <li>Progressive joint pain (commonly hip)</li>
+        <li>Stiffness and difficulty walking</li>
+      </ul>
+
+      <h3>Causes</h3>
+      <ul>
+        <li>Trauma or injury</li>
+        <li>Long-term steroid use</li>
+        <li>Excessive alcohol consumption</li>
+        <li>Medical conditions such as lupus or sickle cell disease</li>
+      </ul>
+
+      <h3>Problems</h3>
+      <p>
+        If left untreated, AVN can lead to severe joint pain, reduced mobility,
+        joint collapse, and arthritis.
+      </p>
+
+      <h3>Treatment Options</h3>
+      <ul>
+        <li>Medications and pain management</li>
+        <li>Physical therapy</li>
+        <li>Activity modification</li>
+        <li>Surgical intervention if required</li>
+      </ul>
+
+      <h3>Recommended Exercises</h3>
+      <ul>
+        <li>Range of motion exercises</li>
+        <li>Strengthening exercises</li>
+        <li>Low-impact activities such as swimming</li>
+        <li>Balance and flexibility routines</li>
+      </ul>
+
+      <h3>Dietary Guidelines</h3>
+      <ul>
+        <li>Calcium and Vitamin D rich foods</li>
+        <li>Adequate protein intake</li>
+        <li>Omega-3 fatty acids</li>
+        <li>Antioxidant-rich fruits and vegetables</li>
+        <li>Limit alcohol, caffeine, and processed foods</li>
+      </ul>

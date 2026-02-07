@@ -2,26 +2,23 @@
   <h1>{{data.site.title}}</h1>
 </header>
 
-<!-- TOP CAROUSEL -->
-<section class="hero-carousel">
-  <button class="carousel-btn prev">&#10094;</button>
-
-  <div class="carousel-track">
-    {{#each data.carousel}}
-      <div class="carousel-slide">
-        <img src="{{this.image}}" class="carousel-image" />
-
-        <div class="carousel-overlay">
-          <h2>{{this.title}}</h2>
-          <p>{{this.subtitle}}</p>
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slides">
+    {{#each slider.items}}
+      <div class="slide {{#if @first}}active{{/if}}">
+        <img src="{{this.image}}" alt="{{this.heading}}">
+        <div class="overlay">
+          <h2>{{this.heading}}</h2>
+          <p>{{this.subtext}}</p>
         </div>
       </div>
     {{/each}}
   </div>
 
-  <button class="carousel-btn next">&#10095;</button>
+  <button class="prev">❮</button>
+  <button class="next">❯</button>
 </section>
-
 
 
 {{#each data.products}}
@@ -42,7 +39,10 @@
         <li>— {{this}}</li>
       {{/each}}
     </ul>
-
+	
+	<p class="Price">
+      {{this.price}}
+    </p>
 
 
    <button
@@ -70,6 +70,10 @@
 		<button onclick="placeOrder()">Send via WhatsApp</button>
 	  </div>
 	</div>
+
+<script>
+  window.autoSlideTime = {{slider.auto_slide_ms}};
+</script>
 
 <script src="css/product.js"></script>
 

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>aboutus | Gangai Hospital</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="/css/aboutus.css">
+<link rel="stylesheet" href="/css/layout.css">
+<link rel="stylesheet" href="/css/services.css">
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/css/testimonials.css">
+<link rel="stylesheet" href="/css/review.css">
+<link rel="stylesheet" href="/css/gallery.css">
+<link rel="stylesheet" href="/css/videos.css">
+<link rel="stylesheet" href="/css/panchakarma.css">
+
+
+</head>
+<body>
+
+<header class="top-header">
+
+<div class="top-bar">
+  <div class="contact">
+      <span>📞 +91 9309448494/01169269751</span>
+
+      <span>✉️ gangaihospital315@gmail.com</span>
+    <div>whatsapp:</div>
+    <div class="whatsapp-contact"> 
+		  <span>919309448494</span>
+    </div>
+  </div>
+   
+  
+
+  <div class="social-ico">
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> 
+
+      <a href="https://www.instagram.com/gangaihospital?igsh&#x3D;cXUzeW1zb2pkYXI&#x3D;" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+      <a href="https://twitter.com/yourpage" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  </div>
+</div>
+
+
+  <div class="header-main">
+    <nav class="site-nav">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/aboutus.html">About</a></li>
+		<li><a href="/panchakarma.html">Panchakarma</a></li>
+		<li><a href="/services.html">Therapies</a></li>
+ 
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/videos.html">Videos</a></li>
+		 
+      </ul>
+    </nav>
+
+	<div class="top-actions">
+	  <button class="book-btn" onclick="openAppointmentModal()">
+		Book Appointment
+	  </button>
+	</div>
+    <!--<a
+	  href="https://wa.me/918793651429?text=%F0%9F%8C%BF%20*Appointment%20Request*%0A%0AHello%2C%20I%20would%20like%20to%20book%20an%20appointment.%0A%0APlease%20let%20me%20know%20available%20slots.%0A%0AThank%20you."
+	  class="book-btn"
+	  target="_blank"
+	>
+	  Book Appointment
+	</a>-->
+
+  </div>
+
+</header>
+
+<div id="appointmentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeAppointmentModal()">&times;</span>
+
+    <h3>Book Appointment</h3>
+
+    <input id="aptName" placeholder="Your Name">
+    <input id="aptPhone" placeholder="Phone Number">
+    <textarea id="aptIssue" placeholder="Health concern (optional)"></textarea>
+
+    <button class="send-btn" onclick="sendAppointmentWhatsApp()">
+      Send via WhatsApp
+    </button>
+  </div>
+</div>
+
+
+
+<!-- LOGO -->
+<div class="logo">
+  <img src="icons/clinic.jpg" alt="Clinic Logo">
+</div>
+
+
+<!-- SLIDER -->
+<section class="slider">
+  <div class="slides">
+      <div class="slide active">
+        <img src="/icons/page1.jpg" alt="Authentic Ayurveda">
+        <div class="overlay">
+          <h2>Authentic Ayurveda</h2>
+          <p>Healing rooted in ancient wisdom</p>
+        </div>
+      </div>
+      <div class="slide ">
+        <img src="/icons/page2.jpg" alt="Natural Therapies">
+        <div class="overlay">
+          <h2>Natural Therapies</h2>
+          <p>Pure, personalized treatments</p>
+        </div>
+      </div>
+      <div class="slide ">
+        <img src="/icons/page3.jpg" alt="Holistic Wellness">
+        <div class="overlay">
+          <h2>Holistic Wellness</h2>
+          <p>Balance your body, mind &amp; soul</p>
+        </div>
+      </div>
+  </div>
+
+  <button class="prev">❮</button>
+  <button class="next">❯</button>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="about">
+    <div class="about-item">
+      <img src="icons/clinic.jpg" alt="Clinic Information">
+
+      <div class="about-text">
+        <h2>Clinic Information</h2>
+
+        <!-- If using content_html in YML -->
+          <div class="about-content">
+            <p>
+  <strong>Ayurveda</strong> is a holistic Indian medical system that promotes 
+  positive health through a flexible, constitution-based approach.
+</p>
+
+<p>
+  Ayurveda is India’s 5,000-year-old holistic powerhouse — 
+  the <span style="color:#6e8b3d; font-weight:600;">Science of Life</span> — 
+  blending body, mind, and spirit.
+</p>
+
+<p>
+  From Sanskrit <em>Ayu</em> (life) + <em>Veda</em> (knowledge), 
+  it customizes herbs, yoga, diet, and rituals to your unique constitution 
+  for peak vitality.
+</p>
+
+<ul>
+  <li>Personalized herbal treatments</li>
+  <li>Detox therapies like Panchakarma</li>
+  <li>Yoga & lifestyle correction</li>
+  <li>Preventive wellness guidance</li>
+</ul>
+
+<p style="color:#7a5243; font-weight:500;">
+  Ready to glow from within? Begin your personalized Ayurvedic journey today.
+</p>
+
+          </div>
+
+       
+      </div>
+    </div>
+</section>
+
+
+<!-- DOCTORS -->
+<!-- DOCTORS -->
+<section class="doctors">
+  <h2>Meet Our Ayurveda Experts</h2>
+  <p>Seasoned practitioners blending ancient wisdom with modern care</p>
+
+  <div class="cards">
+      <div class="card">
+        <img src="/icons/doctor1.jpg" alt="Dr. Pandhari Ingle">
+        <h3>Dr. Pandhari Ingle</h3>
+        <p class="specialization">Ayurveda &amp; Panchakarma</p>
+        <p>Specialized in traditional Ayurveda treatments and holistic wellness programs.</p>
+
+        <!-- SOCIAL LINKS -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/drpandhariingle?igsh&#x3D;Z3UzODZqNDk4ZHhj" target="_blank">
+              <img src="/icons/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://facebook.com/drprofile" target="_blank">
+              <img src="/icons/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://www.youtube.com/@dr.pandhariingle" target="_blank">
+              <img src="/icons/youtube.png" alt="YouTube">
+            </a>
+
+            <a href="gangaihospital315@gmail.com">
+              <img src="/icons/gmail.png" alt="Gmail">
+            </a>
+        </div>
+
+      </div>
+  </div>
+</section>
+
+
+<!-- PASS SLIDER SPEED TO JS -->
+<script>
+  window.autoSlideTime = 1000;
+</script>
+
+<script src="css/aboutus.js"></script>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>Quick Links</h3>
+	  
+	<section class="map-section">
+	  <iframe
+		src="https://www.google.com/maps/embed?pb&#x3D;!1m18!1m12!1m3!1d3740.9376349348613!2d76.2617214!3d20.344194899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda1181d43eba51%3A0xc10a1335928d16f7!2sGangai%20Hospital%20And%20Ayurvedic%20Hospital%20%7C%20Dr.%20Pandhari%20Ingle%20-%20Best%20Ayurveda%20Hospital%20In%20Chikhli%20%7C%20Best%20Spine%20Hospital!5e0!3m2!1sen!2sin!4v1770024123102!5m2!1sen!2sin"
+		width="100%"
+		height="350"
+		style="border:0;"
+		allowfullscreen
+		loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade">
+	  </iframe>
+	</section>
+
+
+
+      <ul>
+
+		
+        <li><a href="/index.html">Home</a></li>
+		<li><a href="/aboutus.html">About</a></li>
+              
+	   <li><a href="/panchakarma.html">Panchakarma</a></li>
+        <li><a href="/services.html">Therapies</a></li>     
+		<li><a href="/products.html">Products</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/videos.html">Videos</a></li>
+		
+      </ul>
+    </div>
+  </div>
+
+ 
+
+  <p class="copy">© 2026  Ayurveda</p>
+
+</footer>
+
+<script src="css/slider.js"></script>
+<script src="css/appointment.js"></script>
+
+</body>
+</html>

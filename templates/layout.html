@@ -10,6 +10,8 @@
 />
 
 <link rel="stylesheet" href="/css/styles.css">
+
+<link rel="stylesheet" href="/css/aboutus.css">
 <link rel="stylesheet" href="/css/layout.css">
 <link rel="stylesheet" href="/css/services.css">
 <link rel="stylesheet" href="/css/home.css">
@@ -17,6 +19,8 @@
 <link rel="stylesheet" href="/css/review.css">
 <link rel="stylesheet" href="/css/gallery.css">
 <link rel="stylesheet" href="/css/videos.css">
+<link rel="stylesheet" href="/css/panchakarma.css">
+
 
 </head>
 <body>
@@ -32,14 +36,15 @@
     {{#if site.contact.email}}
       <span>✉️ {{site.contact.email}}</span>
     {{/if}}
+    <div>whatsapp:</div>
+    <div class="whatsapp-contact"> 
+		{{#if site.whatsapp.number}}
+		  <span>{{site.whatsapp.number}}</span>
+		{{/if}}
+    </div>
   </div>
-   <div>whatsapp</div>
-  <div class="whatsapp-contact"> 
-    {{#if site.whatsapp.number}}
-      <span>{{site.whatsapp.number}}</span>
-    {{/if}}
-  </div>
-
+   
+  
 
   <div class="social-ico">
     {{#if site.social.facebook}}
@@ -61,10 +66,14 @@
     <nav class="site-nav">
       <ul>
         <li><a href="/index.html">Home</a></li>
+        <li><a href="/aboutus.html">About</a></li>
+		<li><a href="/panchakarma.html">Panchakarma</a></li>
+		<li><a href="/services.html">Therapies</a></li>
+ 
         <li><a href="/products.html">Products</a></li>
         <li><a href="/gallery.html">Gallery</a></li>
-        <li><a href="/services.html">Services</a></li>
         <li><a href="/videos.html">Videos</a></li>
+		 
       </ul>
     </nav>
 
@@ -132,11 +141,16 @@
 
       <ul>
 
-		<li><a href="/index.html">Home</a></li>
-        <li><a href="/products.html">Products</a></li>
+		
+        <li><a href="/index.html">Home</a></li>
+		<li><a href="/aboutus.html">About</a></li>
+              
+	   <li><a href="/panchakarma.html">Panchakarma</a></li>
+        <li><a href="/services.html">Therapies</a></li>     
+		<li><a href="/products.html">Products</a></li>
         <li><a href="/gallery.html">Gallery</a></li>
-        <li><a href="/services.html">Services</a></li>
-
+        <li><a href="/videos.html">Videos</a></li>
+		
       </ul>
     </div>
   </div>

@@ -2,17 +2,31 @@
   <h2 class="gallery-title">{{title}}</h2>
 
   <div class="gallery-grid">
-    {{#each images}}
+    {{#each groups}}
       <figure class="gallery-card">
-        <img src="{{this.src}}" alt="{{this.caption}}">
+        
+        <!-- GROUP CAPTION -->
         {{#if this.caption}}
-          <figcaption>{{this.caption}}</figcaption>
+          <figcaption class="group-caption">
+            {{this.caption}}
+          </figcaption>
         {{/if}}
+
+        <!-- IMAGE LIST -->
+        <div class="group-images">
+          {{#each this.images}}
+            <img 
+              src="{{this}}" 
+              alt="../gallery image"
+              onclick="openLightbox('{{this}}', '{{../caption}}')"
+            >
+          {{/each}}
+        </div>
+
       </figure>
     {{/each}}
   </div>
 </section>
-
 
 <!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">

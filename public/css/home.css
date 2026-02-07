@@ -1,208 +1,4 @@
 /* ===================== */
-/* GLOBAL */
-/* ===================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #f6f4ef;          /* soft linen remains */
-  color: #4a3a36; 
-  scroll-behavior: smooth;
-}
-
-/* smooth section reveal base */
-.reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ===================== */
-/* TOP CONTACT BAR */
-/* ===================== */
-.top-bar {
-  background: #e6ded7 !important;         /* light beige-brown */
-  color: #4a3a36 !important;
-  padding: 10px 40px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
-}
-
-.top-bar i {
-  margin-right: 6px;
-  color: #7b8f7a;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.social i {
-  margin-left: 12px;
-  cursor: pointer;
-}
-
-.social i:hover {
-  color: #c2a27a;
-  transform: translateY(-2px);
-}
-
-/* ===================== */
-/* NAVBAR */
-/* ===================== */
-.navbar {
-  background: #422b23;          
-  padding: 18px 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  color: #fdfcf9;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 35px;
-}
-
-.nav-links a {
-  position: relative;
-  text-decoration: none;
-   color: #fdfcf9; 
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  transition: color 0.2s ease;
-}
-
-/* underline slide-in */
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: #7a5243; 
-  transition: width 0.25s ease;
-}
-
-.nav-links a:hover {
-   background: #9b6b57;  
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-.nav-btn {
-  background: #7a5243;          /* button brown */
-  color: #ffffff;
-  padding: 10px 26px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 13px;
-  letter-spacing: 0.6px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.nav-btn:hover {
-  background: #9b6b57; 
-  transform: translateY(-1px) scale(1.03);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
-}
-
-/* ===================== */
-/* SLIDER */
-/* ===================== */
-.slider {
-  position: relative;
-  width: 100%;
-  height: 60vh; /* or whatever height you want */
-  overflow: hidden;
-}
-
-.slide {
-  position: absolute;
-  inset: 0; /* top:0; left:0; right:0; bottom:0 */
-  display: none;
-}
-
-.slide.active {
-  display: block;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* ensures image covers entire slide without stretching */
-  display: block; /* makes sure image fills parent div */
-}
-
-/* Overlay */
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.overlay h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.overlay p {
-  font-size: 1.2rem;
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(66,43,35,0.45);  /* brown overlay */
-  color: white;
-  border: none;
-  font-size: 22px;
-  padding: 10px 14px;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: background 0.2s ease, transform 0.15s ease;
-}
-
-.prev { left: 20px; }
-.next { right: 20px; }
-
-.prev:hover,
-.next:hover {
-   background: rgba(66,43,35,0.8);
-  transform: translateY(-50%) scale(1.08);
-}
-
-/* ===================== */
 /* ESSENCE */
 /* ===================== */
 .essence {
@@ -221,15 +17,15 @@ body {
 .essence p {
   width: 100%;
   margin: 0;
-  text-align: left;
+  text-align: center;
   color: #5c4a44;
   line-height: 1.8;
 }
 
 /* ===================== */
-/* ABOUT */
+/* homedetails */
 /* ===================== */
-.about {
+.homedetails {
   display: flex;
   gap: 60px;
   padding: 90px 12%;
@@ -239,7 +35,7 @@ body {
 
 
 
-.about-item {
+.homedetails-item {
   display: flex;
   gap: 60px;
   align-items: flex-start;   /* 🔥 top-left alignment */
@@ -247,31 +43,31 @@ body {
 }
 
 
-.about-text {
+.homedetails-text {
   flex: 1;
   text-align: left;
 }
 
-.about img {
+.homedetails img {
   width: 380px;
   border-radius: 18px;
   box-shadow: 0 16px 35px rgba(0,0,0,0.12);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.about img:hover {
+.homedetails img:hover {
   transform: translateY(-6px);
   box-shadow: 0 22px 45px rgba(0,0,0,0.16);
 }
 
-.about h2 {
+.homedetails h2 {
   font-family: 'Playfair Display', serif;
   color: #422b23;
   font-size: 32px;
   font-weight: 400;
 }
 
-.about p {
+.homedetails p {
   margin-top: 15px;
   line-height: 1.9;
   color: #5c4a44; 
@@ -326,37 +122,6 @@ body {
   transform: translateY(-1px);
 }
 
-/* ===================== */
-/* FOOTER */
-/* ===================== */
-footer {
-  background: #422b23;
-  color: #fdfcf9;
-  padding: 30px 10%;
-}
-
-.footer-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.footer-grid a {
-  color: #fdfcf9;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.footer-grid a:hover {
-  color: #9b6b57;
-}
-
-.copy {
-  margin-top: 20px;
-  font-size: 13px;
-}
-
 
 /* ===================== */
 /* RESPONSIVE */
@@ -368,13 +133,13 @@ footer {
     padding: 12px 24px;
   }
 
-  .about {
+  .homedetails {
     flex-direction: column;
     text-align: center;
     padding: 60px 8%;
   }
 
-  .about img {
+  .homedetails img {
     width: 100%;
     max-width: 340px;
   }
@@ -399,103 +164,6 @@ nav a,
 
 nav a:hover {
    color: #9b6b57 !important;
-}
-
-/* ===================== */
-/* DOCTORS SECTION */
-/* ===================== */
-.doctors {
-  background: #ffffff;
-  padding: 90px 20px;
-  text-align: center;
-}
-
-.doctors h2 {
-  font-size: 36px;
-  color: #422b23;
-  margin-bottom: 12px;
-  font-weight: 700;
-}
-
-.doctors p {
- color: #5c4a44; 
-  max-width: 700px;
-  margin: 0 auto 40px;
-  line-height: 1.7;
-}
-
-/* Cards grid */
-.doctors .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 28px;
-}
-
-/* Individual doctor card */
-.doctors .card {
-  background: #f9f4f1; /* subtle greenish tint */
-  padding: 28px 18px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(66,43,35,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.doctors .card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 18px 40px rgba(66,43,35,0.12);
-}
-
-/* Doctor image */
-.doctors .card img {
-  width: 100px;        /* reduced size */
-  height: 100px;       /* square */
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 16px;
-   border: 4px solid #7a5243; /* golden outline */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.doctors .card img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
-}
-
-/* Name & specialization */
-
-.doctor-card h3 {
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #3a1f0f;
-}
-
-
-.doctors .card p {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #4a4a44;
-  margin-bottom: 4px;
-}
-
-/* Specialization highlight */
-.doctors .card .specialization {
-  color: #6e5249;
-  font-weight: 500;
-  font-size: 13px;
-  margin-bottom: 10px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .doctors .card img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .doctors h2 {
-    font-size: 28px;
-  }
 }
 
 @media (max-width: 768px) {

@@ -1,22 +1,24 @@
+
+slider:
+  auto_slide_ms: 1000
+  items:
+    - image: "/icons/page1.jpg"
+      heading: "Authentic Ayurveda"
+      subtext: "Healing rooted in ancient wisdom"
+
+    - image: "/icons/page2.jpg"
+      heading: "Natural Therapies"
+      subtext: "Pure, personalized treatments"
+
+    - image: "/icons/page3.jpg"
+      heading: "Holistic Wellness"
+      subtext: "Balance your body, mind & soul"
+      
 data:
   site:
-    title: "Vishwaprakriti Ayurveda"
-
-  carousel:
-    - title: "Rediscover Ancient Healing"
-      subtitle: "Nature’s wisdom blended in every drop."
-      image: "icons/pslide1.jpg"
-
-    - title: "Rooted in Nature"
-      subtitle: "Healing begins when nature meets your routine."
-      image: "icons/pslide2.jpg"
-
-    - title: "Wellness, The Natural Way"
-      subtitle: "Experience modern living with age-old Ayurvedic balance."
-      image: "icons/pslide3.jpg"
-
+    title: "Gangai Hospital Products"
   products:
-    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Test"
+    - title: "Face Wash"
       description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
       features:
         - "Boosts immunity"
@@ -26,8 +28,10 @@ data:
         - "Boosts immunity"
 
       button_text: "Order Now"
-      image: "/icons/product1.jpg"
-    - title: "Gajanan"
+      image: "/icons/FaceWash.png"
+      price: "RS 499.00"
+      
+    - title: "Shuddhi Kalpa"
       description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
       features:
         - "Boosts immunity"
@@ -37,9 +41,10 @@ data:
         - "Boosts immunity"
 
       button_text: "Order Now"
-      image: "/icons/productG.jpg"
-
-    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
+      image: "/icons/ShuddhiKalpa.png"
+      price: "RS 499.00"
+        
+    - title: "Kumkumadi cream"
       description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
       features:
         - "Boosts immunity"
@@ -49,9 +54,10 @@ data:
         - "Boosts immunity"
 
       button_text: "Order Now"
-      image: "/icons/product2.jpg"
+      image: "/icons/Kumkumadicream.png"
+      price: "RS 499.00"
 
-    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
+    - title: "Kumkumadi Tailam"
       description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
       features:
         - "Boosts immunity"
@@ -61,43 +67,8 @@ data:
         - "Boosts immunity"
 
       button_text: "Order Now"
-      image: "/icons/product1.jpg"
-
-    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
-      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
-      features:
-        - "Boosts immunity"
-        - "Improves memory"
-        - "Supports digestive health"
-        - "Safe, natural & chemical-free"
-        - "Boosts immunity"
-
-      button_text: "Order Now"
-      image: "/icons/product2.jpg"
-
-    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
-      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
-      features:
-        - "Boosts immunity"
-        - "Improves memory"
-        - "Supports digestive health"
-        - "Safe, natural & chemical-free"
-        - "Boosts immunity"
-
-      button_text: "Order Now"
-      image: "/icons/product3.jpg"
-
-    - title: "Nityam Suvarnaprashan – Ayurvedic Immunity Booster for Kids"
-      description: "A powerful Ayurvedic formulation specially crafted for children, Nityam Suvarnaprashan strengthens immunity, sharpens memory, and supports holistic development. Made with Suvarna Bhasma and other time-tested herbs, this formulation is rooted in ancient wisdom and backed by modern science"
-      features:
-        - "Boosts immunity"
-        - "Improves memory"
-        - "Supports digestive health"
-        - "Safe, natural & chemical-free"
-        - "Boosts immunity"
-
-      button_text: "Order Now"
-      image: "/icons/product4.jpg"
+      image: "/icons/KumkumadiTailam.jpg"
+      price: "RS 499.00"
 
   footer:
-    text: "© 2026 Vishwaprakriti Ayurveda"
+    text: "© 2026 Gangai Hospital"

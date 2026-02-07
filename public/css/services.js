@@ -1,4 +1,4 @@
-
+/*
   const track = document.querySelector('.carousel-track');
   const slide = document.querySelectorAll('.carousel-slide');
   const prevBtn = document.querySelector('.carousel-btn.prev');
@@ -20,7 +20,7 @@
     updateCarousel();
   });
 
-
+*/
 let currentservices = '';
 
 document.addEventListener('DOMContentLoaded', () => {
