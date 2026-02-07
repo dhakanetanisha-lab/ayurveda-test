@@ -382,16 +382,56 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .top-bar {
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
     text-align: center;
+    align-items: center; /* center all items */
   }
 
-  .header-main {
-    flex-direction: column;
-    gap: 14px;
+  /* Contact section stacked neatly */
+  .contact {
+    display: flex;
+    flex-direction: column; /* stack phone, email, whatsapp vertically */
+    gap: 4px;               /* spacing between items */
+    align-items: center;
+    font-size: 14px;
   }
+
+  .contact span,
+  .contact div {
+    margin: 0;
+  }
+
+  /* Social icons centered and visible */
+  .social-ico {
+    display: flex;
+    justify-content: center;
+    gap: 12px;           /* space between icons */
+    font-size: 20px;     /* ensure icons are visible */
+    color: #4e3f36;      /* Font Awesome color */
+  }
+
+  /* Ensure icons are not hidden by flex direction */
+  .social-ico a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-ico i {
+    color: #4e3f36;      /* reset icon color if needed */
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .social-ico i:hover {
+    color: #6b8f71;
+    transform: translateY(-2px);
+  }
+
+
+  
 }
 
 .map-section {
@@ -409,6 +449,10 @@ body {
 @media (max-width: 768px) {
   .map-section iframe {
     height: 140px;
+  }
+  .header-main {
+    flex-direction: column;
+    gap: 14px;
   }
 }
 
